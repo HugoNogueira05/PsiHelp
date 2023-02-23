@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="zungAnsiedade.css">
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<body>
+    <div id="start">
+        <h1>Escala de autoavaliação de ansiedade de Zung</h1>
+        <p class="description">Criada pelo psiquiatra William Zung, professor da Duke University, a escala de
+            autoavaliação de ansiedade
+            de Zung é um questionário usado ​​por terapeutas e médicos para avaliar o nível de ansiedade dos
+            pacientes.</p>
+        <button id="startBtn" onclick="loadQuiz()">Começar teste</button>
+    </div>
+    <div class="quiz-container" id="quiz">
+        <div class="quiz-header">
+            <h2 id="question">Question Text</h2>
+            <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Pouco tempo</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="b" class="answer">
+                    <label for="b" id="b_text">Algum tempo</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="c" class="answer">
+                    <label for="c" id="c_text">Boa parte do tempo</label>
+                </li>
+                <li>
+                    <input type="radio" name="answer" id="d" class="answer">
+                    <label for="d" id="d_text">Maioria do tempo</label>
+                </li>
+            </ul>
+        </div>
+        <button id="submit">Próxima pergunta</button>
+    </div>
+    <script src="zungAnsiedade.js"></script>
+</body>
+
+</html>
