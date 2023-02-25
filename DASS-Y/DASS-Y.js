@@ -1,3 +1,21 @@
+const quiz = document.getElementById("quiz")
+const respostaEls = document.querySelectorAll(".resposta")
+const p = document.getElementById ("p")
+const nextBtn = document.getElementById ("next")
+const startBtn = document.getElementById("start")
+const resDepre = document.getElementById("resDepre")
+const resAns = document.getElementById("resAns")
+const resStress = document.getElementById("resStress")
+const concDepre = document.getElementById("concDepre")
+const concAns = document.getElementById("concAns")
+const concStress = document.getElementById("concStress")
+const intro = document.getElementById("intro")
+const conclusao = document.querySelector(".conclusao")
+const restart = document.getElementById("restart")
+
+quiz.style.visibility = "hidden"
+conclusao.style.visibility = "hidden"
+
 const dadosQuiz = [
     {p: "Fiquei chateado facilmente"},
     {p: "Senti-me tonto, como se fosse desmaiar"},
@@ -22,25 +40,10 @@ const dadosQuiz = [
     {p: "Senti que a minha vida era terrível"},
 ]
 
-const quiz = document.getElementById("quiz")
-const respostaEls = document.querySelectorAll(".resposta")
-const p = document.getElementById ("p")
-const nextBtn = document.getElementById ("next")
-const startBtn = document.getElementById("start")
-const resDepre = document.getElementById("resDepre")
-const resAns = document.getElementById("resAns")
-const resStress = document.getElementById("resStress")
-const concDepre = document.getElementById("concDepre")
-const concAns = document.getElementById("concAns")
-const concStress = document.getElementById("concStress")
-const intro = document.getElementById("intro")
-const conclusao = document.querySelector(".conclusao")
 
 let perguntaAtual = 0;
 let valor = []
 
-quiz.style.visibility = "hidden"
-conclusao.style.visibility = "hidden"
 
 function limpar(){
     respostaEls.forEach(respostaEls => respostaEls.checked = false)}
@@ -59,7 +62,8 @@ function limpar(){
  }
  
  startBtn.addEventListener("click", () => {
-    document.getElementById("body").style.backgroundColor = "#606060"
+    document.getElementById("body").style.color = "black"    
+
     loadQuiz()
  })
 
@@ -142,7 +146,7 @@ function limpar(){
         else if (valorStress < 18){ concStress.innerHTML = "Possui um stress severo"}
         else  {concStress.innerHTML = "Possui um stress extremo"}
 
-        quiz.innerHTML = `<button onclick="location.reload()">Recomeçar</button>`
+        restart.innerHTML = `<button onclick="location.reload()" id = "next">Recomeçar</button>`
 
 
 
