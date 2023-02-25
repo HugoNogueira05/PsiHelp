@@ -33,11 +33,14 @@ const resStress = document.getElementById("resStress")
 const concDepre = document.getElementById("concDepre")
 const concAns = document.getElementById("concAns")
 const concStress = document.getElementById("concStress")
+const intro = document.getElementById("intro")
+const conclusao = document.querySelector(".conclusao")
 
 let perguntaAtual = 0;
 let valor = []
 
-quiz.style.visibility= "hidden"
+quiz.style.visibility = "hidden"
+conclusao.style.visibility = "hidden"
 
 function limpar(){
     respostaEls.forEach(respostaEls => respostaEls.checked = false)}
@@ -50,10 +53,15 @@ function limpar(){
     p.innerText = pAtual.p
     quiz.style.visibility = "visible"
     startBtn.style.visibility = "hidden"
+    intro.remove()
+    
 
  }
  
- startBtn.addEventListener("click", () => loadQuiz())
+ startBtn.addEventListener("click", () => {
+    document.getElementById("body").style.backgroundColor = "#606060"
+    loadQuiz()
+ })
 
  function respostaSelecionada() {
     let resposta
@@ -71,7 +79,6 @@ function limpar(){
  
  
  /*function respostaSelecionada() {
-
     resposta.forEach(respostaEls => {
         if(respostaEls.checked){
            let resposta = respostaEls.id
@@ -82,6 +89,7 @@ function limpar(){
     
  nextBtn.addEventListener("click", () => {
     let resposta = respostaSelecionada()
+    
     if (resposta == "a"){
         valor.push(0);
     }
@@ -94,11 +102,18 @@ function limpar(){
     if (resposta == "d"){
         valor.push(3)
     }
-    if (resposta == "a" || resposta =="b" || resposta == "c" || resposta == "d"){perguntaAtual++} 
+    if (resposta == "a" || resposta =="b" || resposta == "c" || resposta == "d"){
+        perguntaAtual++
+        transitionOut()
+        setTimeout(move, 300)
+        setTimeout(transitionIn, 600)
+    } 
     if (perguntaAtual < dadosQuiz.length) {
         loadQuiz()
+        
     }
     else {
+        conclusao.style.visibility = "visible"
         let valorFinal = 0
         for (let n = 0 ; n < 21; n++) { valorFinal = valor[n] + valorFinal}
         let valorDepre = valor[2] + valor[4] + valor[9] + valor[12] + valor[15] + valor[16] + valor[20]
@@ -132,4 +147,14 @@ function limpar(){
 
 
     }
-})
+}
+)
+    function transitionOut(){
+    document.getElementById("questao").style.transform = "translateX(-50%) scale(0)"  
+}
+    function transitionIn() {
+        document.getElementById("questao").style.transform = "translateX(0) scale(1)"
+    }
+    function move(){
+        document.getElementById("questao").style.transform = "translateX(50%) scale(0)"
+    }
