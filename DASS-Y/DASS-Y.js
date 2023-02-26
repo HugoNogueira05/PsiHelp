@@ -13,9 +13,6 @@ const intro = document.getElementById("intro")
 const conclusao = document.querySelector(".conclusao")
 const restart = document.getElementById("restart")
 
-quiz.style.visibility = "hidden"
-conclusao.style.visibility = "hidden"
-
 const dadosQuiz = [
     {p: "Fiquei chateado facilmente"},
     {p: "Senti-me tonto, como se fosse desmaiar"},
@@ -55,7 +52,7 @@ function limpar(){
     const pAtual = dadosQuiz[perguntaAtual]
     p.innerText = pAtual.p
     quiz.style.visibility = "visible"
-    startBtn.style.visibility = "hidden"
+    startBtn.remove()
     intro.remove()
     
 
