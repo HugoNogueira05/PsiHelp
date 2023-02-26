@@ -26,7 +26,7 @@ body{
     position: absolute;
     transition: 600ms;
     -webkit-user-drag: none;
-    top: 1.5vh;
+    top: 1.1vh;
     left: 2vw;
     z-index: 1;
     position: fixed;
