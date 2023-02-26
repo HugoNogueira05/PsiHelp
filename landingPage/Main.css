@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+body{
+    background: #171717;
+    min-height: 200vh;
+}
+/* header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 600ms;
+    padding: 40px 100px;
+} */
+.logo{
+    height: 10vh;
+    aspect-ratio: 1;
+    position: absolute;
+    transition: 600ms;
+    -webkit-user-drag: none;
+    top: 2vh;
+    left: 2vw;
+    z-index: 1;
+    position: fixed;
+}
+.logo:hover{
+    height: 20vh;
+}
+#navItems{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: grid;
+    justify-content: flex-end  ;
+    align-items: center;
+    transition: 600ms;
+    padding: 40px 100px;
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1,5vw;
+    column-gap: 10vw;
+    grid-template-columns: 10vw 40vw 10vw 20vw 5vw 5vw 5vw 5vw;
+    z-index: 0;
+
+}
+.testes{
+    grid-column-start: 7;
+    grid-row: 1;
+    transition: 600ms;
+}
+.testes:hover{
+    font-size: 2em;
+}
+.saude{
+    grid-column-start: 6;
+    grid-column-end: 8;
+    grid-row: 1;
+    transition: 600ms;
+}
+.saude:hover{
+    font-size: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.banner{
+    position: absolute;
+    width: 98vw;
+    height: 100vh;
+    background-image: url(./imagens/psihelp-bg.png);
+    background-size: cover;
+    z-index: -1;
+    top: 0%
+}
+#dado{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 2vw;
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 50vh;
+    left:30vw;
+    text-shadow: 0 10px 6px #171717;
+    transition: 600ms;
+}
+.scrolled{
+    padding: 5px 100px;
+    background: #fff;   
+}
+.tScrolled{
+    color: #070707;
+    font-weight: bold;
+}
+.slider-container{
+    margin: 1px;
+    padding: 5px;
+    visibility: collapse; 
+    z-index: 1;
+    background-color: #07070700;
+    color: #fff;
+    position: absolute;
+    top: 4vh;
+    left: 86vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 1vw;
+    transition: 500ms;
+}
