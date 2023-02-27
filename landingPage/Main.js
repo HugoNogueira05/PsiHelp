@@ -10,7 +10,7 @@ pScroll2.classList.toggle("tScrolled", window.scrollY > 0);
 
 pScroll2.addEventListener("mouseover" , function(){
 document.getElementById("slider-container").style.visibility = "visible"
-document.getElementById("slider-container").style.transform = "translateY(10vh)";
+document.getElementById("slider-container").style.transform = "translateY(10vh)"
 })
 // if(pScroll2.addEventListener("mouseover" == true)){
 //     document.getElementById("slider-container").style.visibility = "visible"
@@ -20,6 +20,11 @@ document.getElementById("slider-container").style.transform = "translateY(10vh)"
 //     document.getElementById("slider-container").style.visibility = "colappse"
 //     document.getElementById("slider-container").style.transform = "translateY(4vh)";
 // }
-    pScroll2.addEventListener("mouseleave" , function() {
-    document.getElementById("slider-container").style.visibility = "colappse"
-    document.getElementById("slider-container").style.transform = "translateY(4vh)"})
+    // pScroll2.onmouseleave(  function() {
+    // document.getElementById("slider-container").style.visibility = "colappse"
+    // document.getElementById("slider-container").style.transform = "translateY(4vh)"})
+
+    // function fadeOut(){
+    //     document.getElementById("slider-container").style.transform = "translateX(4vh) scale(0)"
+    // }
+// fadeOut()

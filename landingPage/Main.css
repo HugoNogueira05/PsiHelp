@@ -32,7 +32,7 @@ body{
     position: fixed;
 }
 .logo:hover{
-    height: 20vh;
+    height: 15vh;
 }
 #navItems{
     position: fixed;
@@ -58,7 +58,7 @@ body{
     transition: 600ms;
 }
 .testes:hover{
-    font-size: 2em;
+    font-size: 1.5em;
 }
 .saude{
     grid-column-start: 6;
@@ -75,7 +75,7 @@ a{
 }
 .banner{
     position: absolute;
-    width: 98vw;
+    width: 100vw;
     height: 100vh;
     background-image: url(./psihelp-bg.png);
     background-size: cover;
@@ -116,4 +116,5 @@ a{
     font-weight: bold;
     font-size: 1vw;
     transition: 500ms;
+    position: fixed;
 }
