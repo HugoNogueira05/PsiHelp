@@ -1,0 +1,36 @@
+
+body{
+    align-items: center;
+    background-color: #171717;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center ;
+    color: white;
+}
+.card{
+    height: 51vh;
+    width: 30vw;
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 10%;
+    cursor:pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#card1:hover{
+    height: 70vh;
+    width: 41.2vw;
+}   
+#card2:hover{
+    height: 70vh;
+    width: 41.2vw;
+}   
