@@ -52,6 +52,7 @@ function limpar(){
     const pAtual = dadosQuiz[perguntaAtual]
     p.innerText = pAtual.p
     quiz.style.visibility = "visible"
+    quiz.style.display = "block"
     startBtn.remove()
     intro.remove()
     

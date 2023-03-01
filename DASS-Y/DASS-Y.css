@@ -1,7 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
 
-
+ul{
+  list-style-type: none;
+}
 #next {
     --b: 3px;   /* border thickness */
     --s: .15em; /* size of the corner */
@@ -89,8 +91,7 @@
     aspect-ratio: 1;
     max-height: 50vh;
     font-size: 2vh;
-
-    visibility: collapse;
+    visibility: hidden;
 }
  #questao{
     margin: 5px;

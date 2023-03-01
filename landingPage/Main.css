@@ -1,25 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
 body{
     background: #171717;
     min-height: 200vh;
 }
-/* header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: 600ms;
-    padding: 40px 100px;
-} */
 .logo{
     height: 10vh;
     aspect-ratio: 1;
@@ -30,48 +14,10 @@ body{
     left: 2vw;
     z-index: 1;
     position: fixed;
+    float: left;
 }
 .logo:hover{
     height: 15vh;
-}
-#navItems{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: grid;
-    justify-content: flex-end  ;
-    align-items: center;
-    transition: 600ms;
-    padding: 40px 100px;
-    font-size: 2vh;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 1,5vw;
-    column-gap: 10vw;
-    grid-template-columns: 10vw 40vw 10vw 20vw 5vw 5vw 5vw 5vw;
-    z-index: 0;
-
-}
-.testes{
-    grid-column-start: 7;
-    grid-row: 1;
-    transition: 600ms;
-}
-.testes:hover{
-    font-size: 1.5em;
-}
-.saude{
-    grid-column-start: 6;
-    grid-column-end: 8;
-    grid-row: 1;
-    transition: 600ms;
-}
-.saude:hover{
-    font-size: 1.5em;
-}
-a{
-    text-decoration: none;
-    color: white;
 }
 .banner{
     position: absolute;
@@ -94,6 +40,40 @@ a{
     text-shadow: 0 10px 6px #171717;
     transition: 600ms;
 }
+ .navBar{
+    position: fixed;
+    top: 1vh;
+    width: 1vw;
+    display: grid;
+    justify-content: flex-end  ;
+    align-items: center;
+    transition: 600ms;
+    padding: 40px 100px;
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    z-index: 0;
+    border: #fff solid;
+    left: 89vw;
+
+} 
+.testes{
+    position: absolute;
+    font-size: 1,2vh;
+    transition: 600ms;
+    color: #fff;
+    padding: 15px;
+    cursor: default;
+    text-decoration: none;
+    z-index: 9999;
+}
+.testes:hover{
+    font-size: 1.5em;
+} 
+
+.testes2:hover{
+    font-size: 1.5em;
+}
 .scrolled{
     padding: 5px 100px;
     background: #fff;   
@@ -102,19 +82,69 @@ a{
     color: #070707;
     font-weight: bold;
 }
-.slider-container{
-    margin: 1px;
-    padding: 5px;
-    visibility: collapse; 
-    z-index: 1;
-    background-color: #07070700;
-    color: #fff;
+
+.dropdown-menu1{
+    visibility: collapse;
     position: absolute;
-    top: 4vh;
-    left: 85vw;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 1vw;
-    transition: 500ms;
+    min-width: 158px;
+    z-index: 1;
+    transition: 300ms;
+    scale: 0;
+    left: -2vw;
+    top: 3vh;
+}
+.navBar:hover .dropdown-menu1{
+    visibility: visible;
+    position: absolute;
+    transform: translate(3vw , 7vh);
+    scale: 1;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.navBar2{
     position: fixed;
+    top: 1vh;
+    width: 1vw;
+    display: grid;
+    justify-content: flex-end  ;
+    align-items: center;
+    transition: 600ms;
+    padding: 40px 100px;
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold; 
+    z-index: 0;
+    border: #fff solid; 
+    left: 75vw;
+} 
+.saude{
+    position: absolute;
+    font-size: 1,2vh;
+    transition: 600ms;
+    color: #fff;
+    padding: 15px;
+    cursor: default;
+    text-decoration: none;
+    z-index: 9999;
+}
+.saude:hover{
+    font-size: 1.5em;
+}
+.dropdown-menu2{
+    visibility: collapse;
+    position: absolute;
+    min-width: 158px;
+    z-index: 1;
+    transition: 300ms;
+    scale: 0;
+    left: -2vw;
+    top: 3vh;
+}
+.navBar2:hover .dropdown-menu2{
+    visibility: visible;
+    position: absolute;
+    transform: translate(3vw , 7vh);
+    scale: 1;
 }
