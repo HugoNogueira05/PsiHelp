@@ -64,15 +64,11 @@ ul{
     height: 100vh;
     width: 100vw;
     background-color: #171717;
+    font-size: 2vh; 
 }
 h2{
   text-align: center;
-  color: black;
 }
-h3{
-  color: #000000;
-}
- 
   button {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
@@ -109,20 +105,6 @@ h3{
     font-size: larger;
     aspect-ratio: 1;
     
-}
-.conclusao{
-    margin: 5px;
-    padding: 20px;
-    position: relative;
-    background-color: #ffffff ;
-    border-radius: 5%;
-    color: rgb(0, 0, 0);
-    visibility: collapse;
-    aspect-ratio: 1;
-    max-height: 50vh;
-    transform: translate(38vw, -24vh);
-    width: 200px;
-    font-size: 0.8vw;
 }
 input[type="radio"] {
     -ms-transform: scale(1.5); /* IE 9 */
@@ -175,20 +157,6 @@ input[type="radio"] {
   width: 60vw;
 
 }
-    .conclusao{
-        margin: 1px;
-        padding: 10px;
-        position: relative;
-        background-color: #ffffff ;
-        border-radius: 5%;
-        color: rgb(0, 0, 0);
-        visibility: collapse;
-        aspect-ratio: 1;
-        max-height: 30vh;
-        transform: translate(20vw, -22vh);
-        width: 200px;
-        font-size: 1.5vh;
-}
 #next{
 display: inline-block;
 outline: 0;
@@ -206,3 +174,141 @@ transition: transform 200ms, background 200ms;}
     transform: translateY(-2px);
 }
   }
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container .containerA .containerD .containerS{
+    display: flex;
+    background: transparent;
+    border-radius: 8px;
+    width: 220px;
+    padding: 50px 0;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    visibility: hidden;
+    justify-content: center;
+    margin: auto;
+    top: 20vh;
+    border: white solid;
+
+}
+.circular-progress{
+    position: relative;
+    height: 250px;
+    width: 250px;
+    background: conic-gradient(#1e1c20 3.6deg, #000000 0deg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.circular-progress::before{
+    content: "";
+    position: absolute;
+    height: 210px;
+    width: 210px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.progress-value{
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    color: #262429;
+}
+.text .textA .textS .textD{
+    font-size: 2vh;
+    font-weight: 500200;
+    color: rgb(255, 255, 255);
+    text-align: center  ;
+    
+}
+.circular-progressD{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background: conic-gradient(#29272c 3.6deg, #fff 0deg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.circular-progressD::before{
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.progress-valueD{
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: #232225;
+}
+.circular-progressA{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background: conic-gradient(#2f2e31 3.6deg, #fff 0deg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.circular-progressA::before{
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.progress-valueA{
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: #201e22;
+}
+.circular-progressS{
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background: conic-gradient(#302e33 3.6deg, #fff 0deg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.circular-progressS::before{
+  content: "";
+  position: absolute;
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.progress-valueS{
+  position: relative;
+  font-size: 40px;
+  font-weight: 600;
+  color: #312f35;
+}
+.conclusao{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  visibility: hidden;
+  border: wheat solid;
+  margin-top: 20vh;
+}

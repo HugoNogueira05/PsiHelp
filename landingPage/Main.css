@@ -53,7 +53,6 @@ body{
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     z-index: 0;
-    border: #fff solid;
     left: 89vw;
 
 } 
@@ -74,14 +73,14 @@ body{
 .testes2:hover{
     font-size: 1.5em;
 }
-.scrolled{
+/* .scrolled{
     padding: 5px 100px;
     background: #fff;   
 }
 .tScrolled{
     color: #070707;
     font-weight: bold;
-}
+} */
 
 .dropdown-menu1{
     visibility: collapse;
@@ -116,7 +115,6 @@ a{
     font-family: 'Nunito', sans-serif;
     font-weight: bold; 
     z-index: 0;
-    border: #fff solid; 
     left: 75vw;
 } 
 .saude{

@@ -38,7 +38,7 @@ const dadosQuiz = [
 ]
 
 
-let perguntaAtual = 19;
+let perguntaAtual = 0;
 let valor = []
 
 
@@ -104,14 +104,16 @@ function limpar(){
         
     }
     else {
+        quiz.remove()
         conclusao.style.visibility = "visible"
         let valorFinal = 0
         for (let n = 0 ; n < 21; n++) { valorFinal = valor[n] + valorFinal}
         let valorDepre = valor[2] + valor[4] + valor[9] + valor[12] + valor[15] + valor[16] + valor[20]
         let valorStress = valor[0] + valor[5] + valor[7] + valor[10] + valor[11] + valor[13] + valor[17]
         let valorAns = valor[1] + valor[3] + valor[6] + valor[8] + valor[14] + valor[18] + valor[19]
-        quiz.innerHTML = `<h2>Tiveste um resultado de ${valorFinal}/${dadosQuiz.length * 3}</h2>`
+        document.querySelector(".text").innerHTML = `<h2>Tiveste um resultado de ${valorFinal}/${dadosQuiz.length * 3}</h2>`
         resDepre.innerHTML = `<h3>Depressão : ${valorDepre}/21</h3>`
+        
         if (valorDepre > 16){ concDepre.innerHTML = "Possui uma depressão extrema"}
         else if (valorDepre > 13){ concDepre.innerHTML = "Possui uma depressão severa"}
         else if (valorDepre > 8){ concDepre.innerHTML = "Possui uma depressão moderada"}
@@ -136,7 +138,74 @@ function limpar(){
         restart.innerHTML = `<button onclick="location.reload()" id = "next">Recomeçar</button>`
 
 
+        document.querySelector(".container").style.visibility = "visible"
+        let circularProgress = document.querySelector(".circular-progress")
+        let progressValue = document.querySelector(".progress-value")
+        
+        let progressStartValue = 0
+        let speed = 40
+        
+        let progress = setInterval(() => {
+            progressStartValue++
+        
+            progressValue.textContent = `${progressStartValue}/63`;
+        
+            circularProgress.style.background = `conic-gradient(#2f2e31 ${progressStartValue * 5.714285714}deg, #fff 0deg)`
+            if(progressStartValue == valorFinal){
+                clearInterval(progress);
+            }
+        }, speed)
+        
+        document.querySelector(".containerD").style.visibility = "visible"
+        let circularProgressD = document.querySelector(".circular-progressD")
+        let progressValueD = document.querySelector(".progress-valueD")
+        
+        let progressStartValueD = 0
+        
+        let progressD = setInterval(() => {
+            progressStartValueD++
+        
+            progressValueD.textContent = `${progressStartValueD}/21`;
+        
+            circularProgressD.style.background = `conic-gradient(#2f2e31 ${progressStartValueD * 17.14285714}deg, #fff 0deg)`
+            if(progressStartValueD == valorDepre){
+                clearInterval(progressD);
+            }
+        }, speed)
 
+        document.querySelector(".containerS").style.visibility = "visible"
+        let circularProgressS = document.querySelector(".circular-progressS")
+        let progressValueS = document.querySelector(".progress-valueS")
+        
+        let progressStartValueS = 0
+        
+        let progressS = setInterval(() => {
+            progressStartValueS++
+        
+            progressValueS.textContent = `${progressStartValueS}/21`;
+        
+            circularProgressS.style.background = `conic-gradient(#2f2e31 ${progressStartValueS * 17.14285714}deg, #fff 0deg)`
+            if(progressStartValue == valorStress){
+                clearInterval(progressS);
+            }
+        }, speed)
+        
+        document.querySelector(".containerA").style.visibility = "visible"
+        let circularProgressA = document.querySelector(".circular-progressA")
+        let progressValueA = document.querySelector(".progress-valueA")
+        
+        let progressStartValueA = 0
+        
+        let progressA = setInterval(() => {
+            progressStartValueA++
+        
+            progressValueA.textContent = `${progressStartValueA}/21`;
+        
+            circularProgressA.style.background = `conic-gradient(#2f2e31 ${progressStartValueA * 17.14285714}deg, #fff 0deg)`
+            if(progressStartValueA == valorAns){
+                clearInterval(progressA);
+            }
+        }, speed)
     }
 }
 )

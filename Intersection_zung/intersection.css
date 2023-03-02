@@ -11,6 +11,7 @@ body{
     text-align: center ;
     color: white;
     font-family: 'Nunito', sans-serif;
+    cursor: default;
 }
 .card{
     height: 40vh;
