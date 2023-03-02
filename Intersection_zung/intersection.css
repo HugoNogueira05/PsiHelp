@@ -13,8 +13,8 @@ body{
     font-family: 'Nunito', sans-serif;
 }
 .card{
-    height: 51vh;
-    width: 30vw;
+    height: 40vh;
+    width: 23vw;
     background-color: rgba(255, 255, 255, 0.04);
     border-radius: 10%;
     cursor:pointer;
@@ -28,14 +28,36 @@ body{
     gap: 30px;
 }
 #card1:hover{
-    height: 70vh;
-    width: 41.2vw;
+    height: 56vh;
+    width: 32.2vw;
     font-size: 1.4em;
 }   
 #card2:hover{
-    height: 70vh;
-    width: 41.2vw;
+    height: 56vh;
+    width: 32.2vw;
     font-size: 1.4em;
+}
+#card3:hover{
+    height: 56vh;
+    width: 32.2vw;
+    font-size: 1.4em;
+}
+#card1:hover > .t1{
+    visibility: visible;
+}
+#card2:hover > .t2{
+    visibility: visible;
+}
+#card3:hover > .t3{
+    visibility: visible;
+}
+#t{
+    position: relative;
+    visibility: hidden;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
 }
 .logo{
     height: 10vh;
@@ -55,4 +77,17 @@ body{
 a{
     text-decoration: none;
     color: #fff;
+}
+#card1:hover > h3{
+    font-size: 1.4em;
+}
+#card2:hover > h3{
+    font-size: 1.4em;
+}
+#card3:hover > h3{
+    font-size: 1.4em;
+}
+h1{
+    position: absolute;
+    top: 5vh;
 }

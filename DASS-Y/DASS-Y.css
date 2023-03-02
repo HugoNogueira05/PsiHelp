@@ -31,10 +31,10 @@ ul{
   }
   
   
-  #start {
+  /* #start {
     --b: 3px;   /* border thickness */
-    --s: .15em; /* size of the corner */
-    --c: #ffffff;
+    /* --s: .15em; size of the corner */
+    /* --c: #ffffff;
     width: 100%;
     padding: calc(.05em + var(--s)) calc(.3em + var(--s));
     color: var(--c);
@@ -45,8 +45,8 @@ ul{
     transition: .3s linear, color 0s, background-color 0s;
     outline: var(--b) solid #ffffff00;
     outline-offset: .2em;
-  }
-  #start:hover,
+  } */
+  /* #start:hover,
   #start:focus-visible{
     --_p: 0px;
     outline-color: var(--c);
@@ -55,18 +55,24 @@ ul{
   #start:active {
     background: var(--c);
     color: #000000;
-  }
+  } */ 
   
   body {
     font-family: 'Nunito', sans-serif;
     color: #ffffff;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    height: 100vh;
+    width: 100vw;
     background-color: #171717;
 }
-  
+h2{
+  text-align: center;
+  color: black;
+}
+h3{
+  color: #000000;
+}
+ 
   button {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
@@ -91,7 +97,7 @@ ul{
     aspect-ratio: 1;
     max-height: 50vh;
     font-size: 2vh;
-    visibility: hidden;
+    transform: translate(36vw, 20vh);
 }
  #questao{
     margin: 5px;
@@ -108,10 +114,15 @@ ul{
     margin: 5px;
     padding: 20px;
     position: relative;
-    background-color: #7c7c7c ;
+    background-color: #ffffff ;
     border-radius: 5%;
-    color: white;
+    color: rgb(0, 0, 0);
     visibility: collapse;
+    aspect-ratio: 1;
+    max-height: 50vh;
+    transform: translate(38vw, -24vh);
+    width: 200px;
+    font-size: 0.8vw;
 }
 input[type="radio"] {
     -ms-transform: scale(1.5); /* IE 9 */
@@ -119,21 +130,79 @@ input[type="radio"] {
     transform: scale(1.5);
   }
   #landingPage{
-    position: absolute;
-    transform: translate(0.5vh , 0.2vh);
+    margin: auto;
+    border: white solid;
 
 
   }
+  .logo{
+    height: 10vh;
+    aspect-ratio: 1;
+    position: absolute;
+    transition: 600ms;
+    -webkit-user-drag: none;
+    top: 1.1vh;
+    left: 2vw;
+    z-index: 1;
+    position: fixed;
+    float: left;
+}
+.logo:hover{
+    height: 15vh;
+}
   @media screen and (max-width: 800px) {
     .quiz-container{
-      margin: 5px;
-      padding: 10px;
-      background-color: #ffffff;
-      border-radius: 5%;
-      aspect-ratio: 1;
-      height: 50vh;
-      font-size: 2vh;
-      overflow: scroll;
-      visibility: collapse;
-  }
+        margin: 5px;
+        padding: 10px;
+        background-color: #ffffff;
+        border-radius: 5%;
+        min-width: 200px;
+        width: 70vw;
+        height: 55vh;
+        font-size: 1.7vh;
+        transform: translate(10vw, 20vh);
+        font-size: small;
 }
+#questao{
+  margin: 5px;
+  padding: 15px;
+  position: relative;
+  transition: 300ms ease;
+  background-color: #7c7c7c ;
+  border-radius: 5%;
+  font-size: 1.7vh;
+  max-height: 38vh;
+  width: 60vw;
+
+}
+    .conclusao{
+        margin: 1px;
+        padding: 10px;
+        position: relative;
+        background-color: #ffffff ;
+        border-radius: 5%;
+        color: rgb(0, 0, 0);
+        visibility: collapse;
+        aspect-ratio: 1;
+        max-height: 30vh;
+        transform: translate(20vw, -22vh);
+        width: 200px;
+        font-size: 1.5vh;
+}
+#next{
+display: inline-block;
+outline: 0;
+border: 0;
+cursor: pointer;
+background: #000000;
+color: #FFFFFF;
+border-radius: 8px;
+padding: 14px 24px 16px;
+font-size: 18px;
+font-weight: 700;
+line-height: 1;
+transition: transform 200ms, background 200ms;}
+#next:hover{
+    transform: translateY(-2px);
+}
+  }

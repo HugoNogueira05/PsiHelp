@@ -38,7 +38,7 @@ const dadosQuiz = [
 ]
 
 
-let perguntaAtual = 0;
+let perguntaAtual = 19;
 let valor = []
 
 
@@ -51,19 +51,8 @@ function limpar(){
 
     const pAtual = dadosQuiz[perguntaAtual]
     p.innerText = pAtual.p
-    quiz.style.visibility = "visible"
-    quiz.style.display = "block"
-    startBtn.remove()
-    intro.remove()
-    
-
  }
- 
- startBtn.addEventListener("click", () => {
-    document.getElementById("body").style.color = "black"    
-
-    loadQuiz()
- })
+ loadQuiz()
 
  function respostaSelecionada() {
     let resposta
