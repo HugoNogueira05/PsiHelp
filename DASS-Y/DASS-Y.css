@@ -5,7 +5,7 @@ ul{
 }
 #next {
     --b: 3px;   /* border thickness */
-    --s: .15em; /* size of the corner */
+    --s: .25em; /* size of the corner */
     --c: #ffffff;
     
     padding: calc(.05em + var(--s)) calc(.3em + var(--s));
@@ -47,6 +47,10 @@ h2{
 #cards{
   position: relative; 
   top: 5vh;  
+  display: grid;
+  grid-template-rows: 4;
+  grid-template-columns: 1;
+  row-gap: 2vh;
 }
 button {
     font-family: 'Nunito', sans-serif;
@@ -55,7 +59,7 @@ button {
     cursor: pointer;
     border: none;
     margin: .1em;
-    z-index: 999;
+    z-index: 2;
     
   }
   .card1 , .card2 , .card3, .card4{
@@ -63,9 +67,14 @@ button {
     margin: auto;
     transition: 300ms ease-in;
     background-color: white;
-    z-index: -1;
+    z-index: 1;
     top: 2px;
     padding: 2px;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 5%;
+
   }
   .card1:hover{
     background-color: rgb(49, 138, 255);
@@ -101,8 +110,8 @@ button {
     min-width: 200px;
     max-height: 80vh;
     font-size: 4vh;
-    border: white solid 1px;
     text-align: center;
+    
 }
  #questao{
     margin: 5px;
@@ -112,15 +121,13 @@ button {
     border-radius: 5%;
     font-size: 3vh;
     top: 10px;
-    text-align: center;
-    border: red solid 1px;    
+    text-align: center;  
     height: fit-content;
     font-weight: bold;
     
 }
   #landingPage{
     margin: auto;
-    border: white solid;
   }
   #a , #b, #c , #d{
     position: relative;

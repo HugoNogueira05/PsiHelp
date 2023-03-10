@@ -101,7 +101,7 @@ function verificar(){
         document.getElementById("check3").style.scale = "0"
         document.getElementById("check4").style.scale = "1"
     }
-}
+    }
     btnA.addEventListener("click", () => {
         resposta = "a"
         verificar()
@@ -122,7 +122,10 @@ function verificar(){
 
  
  nextBtn.addEventListener("click", () => {
-    console.log(resposta);
+    document.getElementById("check1").style.scale = "0"
+    document.getElementById("check2").style.scale = "0"
+    document.getElementById("check3").style.scale = "0"
+    document.getElementById("check4").style.scale = "0"
     if (resposta == "a"){
         valor.push(0);
     }
@@ -146,6 +149,7 @@ function verificar(){
         
     }
     else {
+        document.getElementById("publicidade").style.visibility = "collapse";
         quiz.remove()
         conclusao.style.visibility = "visible"
         let valorFinal = 0
