@@ -16,7 +16,7 @@ body{
 .card{
     height: 40vh;
     width: 23vw;
-    background-color: rgba(255, 255, 255, 0.04);
+    background-image: linear-gradient(to bottom right, #424242 , #131010);
     border-radius: 10%;
     cursor:pointer;
     border: 1px solid rgba(255, 255, 255, 0.1);
