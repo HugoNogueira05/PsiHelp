@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
 
 ul{
@@ -7,7 +6,7 @@ ul{
 #next {
     --b: 3px;   /* border thickness */
     --s: .15em; /* size of the corner */
-    --c: #000000;
+    --c: #ffffff;
     
     padding: calc(.05em + var(--s)) calc(.3em + var(--s));
     color: var(--c);
@@ -18,6 +17,9 @@ ul{
     transition: .3s linear, color 0s, background-color 0s;
     outline: var(--b) solid #00000000;
     outline-offset: .2em;
+    position: relative;
+    top: 10vh;
+    
   }
   #next:hover,
   #next:focus-visible{
@@ -82,40 +84,51 @@ h2{
   .resposta{
     cursor: pointer;
     text-align: center;
-    
+    background: transparent;
+    width: 20vw;
+    position: absolute;
+    }
+  li{
+    color: #000000;
+    position: relative;
   }
 .quiz-container{
     margin: 5px;
+    top: 3vh;
     padding: 10px;
-    background-color: #ffffff;
-    border-radius: 5%;
     min-width: 200px;
-    aspect-ratio: 1;
-    max-height: 50vh;
-    font-size: 2vh;
-    transform: translate(36vw, 20vh);
+    max-height: 80vh;
+    font-size: 4vh;
+    border: white solid 1px;
+    text-align: center;
 }
  #questao{
     margin: 5px;
     padding: 20px;
     position: relative;
     transition: 300ms ease;
-    background-color: #7c7c7c ;
     border-radius: 5%;
-    font-size: larger;
-    aspect-ratio: 1;
+    font-size: 3vh;
+    /* aspect-ratio: 1; */
+    top: 10px;
+    text-align: center;
+    border: red solid 1px;    
+    height: fit-content;
+    font-weight: bold;
     
 }
-input[type="radio"] {
-    -ms-transform: scale(1.5); /* IE 9 */
-    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
-    transform: scale(1.5);
-  }
   #landingPage{
     margin: auto;
     border: white solid;
 
 
+  }
+  #a , #b, #c , #d{
+    background-color: #fff;
+    z-index: -1;
+    position: relative;
+    width: 400px;
+    height: 6vh;
   }
   .logo{
     height: 10vh;
