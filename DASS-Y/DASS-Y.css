@@ -32,33 +32,6 @@ ul{
     color: #ffffff;
   }
   
-  
-  /* #start {
-    --b: 3px;   /* border thickness */
-    /* --s: .15em; size of the corner */
-    /* --c: #ffffff;
-    width: 100%;
-    padding: calc(.05em + var(--s)) calc(.3em + var(--s));
-    color: var(--c);
-    --_p: var(--s);
-    background:
-      conic-gradient(from 90deg at var(--b) var(--b),#00000000 90deg,var(--c) 0)
-      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
-    outline: var(--b) solid #ffffff00;
-    outline-offset: .2em;
-  } */
-  /* #start:hover,
-  #start:focus-visible{
-    --_p: 0px;
-    outline-color: var(--c);
-    outline-offset: .05em;
-  }
-  #start:active {
-    background: var(--c);
-    color: #000000;
-  } */ 
-  
   body {
     font-family: 'Nunito', sans-serif;
     color: #ffffff;
@@ -71,27 +44,56 @@ ul{
 h2{
   text-align: center;
 }
-  button {
+#cards{
+  position: relative; 
+  top: 5vh;  
+}
+button {
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 2rem;
     cursor: pointer;
     border: none;
     margin: .1em;
+    z-index: 999;
     
   }
+  .card1 , .card2 , .card3, .card4{
+    width: 25vw;
+    margin: auto;
+    transition: 300ms ease-in;
+    background-color: white;
+    z-index: -1;
+    top: 2px;
+    padding: 2px;
+  }
+  .card1:hover{
+    background-color: rgb(49, 138, 255);
+  }
+  .card2:hover{
+    background-color: #5DADE2 ;
+  }
+  .card3:hover{
+    background-color: #FF5733;
+  }
+  .card4:hover{
+    background-color: #F1FF56 ;
+  }
+  #check1 , #check2 , #check3 , #check4{
+    visibility: visible;
+    height: 3vh;
+    aspect-ratio: 1;
+    scale: 0;
+    transition: 300ms;
+  }
 
-  .resposta{
+.resposta{
     cursor: pointer;
     text-align: center;
     background: transparent;
     width: 20vw;
     position: absolute;
     }
-  li{
-    color: #000000;
-    position: relative;
-  }
 .quiz-container{
     margin: 5px;
     top: 3vh;
@@ -109,7 +111,6 @@ h2{
     transition: 300ms ease;
     border-radius: 5%;
     font-size: 3vh;
-    /* aspect-ratio: 1; */
     top: 10px;
     text-align: center;
     border: red solid 1px;    
@@ -120,12 +121,8 @@ h2{
   #landingPage{
     margin: auto;
     border: white solid;
-
-
   }
   #a , #b, #c , #d{
-    background-color: #fff;
-    z-index: -1;
     position: relative;
     width: 400px;
     height: 6vh;

@@ -11,25 +11,27 @@
     <div class = "quiz-container" id="quiz">
         <h3>Responda conforme se sentiu na última semana:</h3>
         <div id="questao"><h2 id="p"></h2>
-            <ul>
-                <li>
-                    <input type="button" name="resposta" id="a" class="resposta">
-                    <label>Discordo</label>
-                </li>
-                <li>
-                    <input type="button" name="resposta" id="b" class="resposta">
-                    <label>Não discordo totalmente</label>
-                </li>
-                <li>
-                    <input type="button" name="resposta" id="c" class="resposta">
-                    <label>Concordo parcialmente</label>
-                </li>
-                <li>
-                    <input type="button" name="resposta" id="d" class="resposta">
-                    <label>Concordo totalmente</label>
-                </li>
-            </ul>
-            <button role="button" id="next">Próxima questão</button>
+            <div id="cards">
+                <div class="card1">
+                    <img src="./icons8-done-24.png" id="check1">
+                    <button id="a" name="resposta" class= "resposta">Discordo</button>
+                </div>
+                <div class="card2">
+                    <img src="./icons8-done-24.png" id="check2">
+                    <button type="button" name="resposta" id="b" class="resposta">Não discordo totalmente</button>
+                </div>
+                <div class="card3">
+                    <img src="./icons8-done-24.png" id="check3">
+                    <button type="button" name="resposta" id="c" class="resposta">Concordo parcialmente</button>
+                </div>
+                <div class="card4">
+                    <img src="./icons8-done-24.png" id="check4">
+                    <button type="button" name="resposta" id="d" class="resposta">Concordo totalmente</button>
+                    
+                    
+                </div>
+            </div>
+                <button role="button" id="next">Próxima questão</button>
         </div>
     </div>
     <div class="conclusao">
@@ -63,7 +65,9 @@
     </div>
     </div>
             <div id="restart"></div>
+            <a target="_blank" href="https://icons8.com/icon/83145/done">Done</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     <script src="DASS-Y.js"></script>
+    
 </body>
 </div>
 </html>

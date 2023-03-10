@@ -2,15 +2,13 @@ const quiz = document.getElementById("quiz")
 const respostaEls = document.querySelectorAll(".resposta")
 const p = document.getElementById ("p")
 const nextBtn = document.getElementById ("next")
-const startBtn = document.getElementById("start")
 const resDepre = document.getElementById("resDepre")
 const resAns = document.getElementById("resAns")
 const resStress = document.getElementById("resStress")
 const concDepre = document.getElementById("concDepre")
 const concAns = document.getElementById("concAns")
 const concStress = document.getElementById("concStress")
-const intro = document.getElementById("intro")
-const conclusao = document.querySelector(".conclusao")
+const conclusao = document.querySelector(".conclusao")  
 const restart = document.getElementById("restart")
 
 const dadosQuiz = [
@@ -40,10 +38,18 @@ const dadosQuiz = [
 
 let perguntaAtual = 0;
 let valor = []
-
+let resposta
+let btnA = document.getElementById("a");
+let btnB = document.getElementById("b");
+let btnC = document.getElementById("c");
+let btnD = document.getElementById("d");
 
 function limpar(){
-    respostaEls.forEach(respostaEls => respostaEls.checked = false)}
+    document.querySelector(".card1").style.backgroundColor = "#fff"
+    document.querySelector(".card2").style.backgroundColor = "#fff"
+    document.querySelector(".card3").style.backgroundColor = "#fff"
+    document.querySelector(".card4").style.backgroundColor = "#fff"
+}
 
  function loadQuiz(){
 
@@ -54,33 +60,69 @@ function limpar(){
  }
  loadQuiz()
 
- function respostaSelecionada() {
-    let resposta
-    if (respostaEls[0].checked){
-    resposta = "a"}
-    if (respostaEls[1].checked){
-    resposta = "b"}
-    if (respostaEls[2].checked){
-    resposta = "c"}
-    if (respostaEls[3].checked){
-    resposta = "d"}
-    return resposta
- }
+function verificar(){
+    if (resposta == "a"){
+        document.querySelector(".card1").style.backgroundColor = "#5DADE2";
+        document.querySelector(".card2").style.backgroundColor = "#fff"
+        document.querySelector(".card3").style.backgroundColor = "#fff"
+        document.querySelector(".card4").style.backgroundColor = "#fff"
+        document.getElementById("check1").style.scale = "1"
+        document.getElementById("check2").style.scale = "0"
+        document.getElementById("check3").style.scale = "0"
+        document.getElementById("check4").style.scale = "0"
+    }
+    else if (resposta == "b"){
+        document.querySelector(".card2").style.backgroundColor = "#5DADE2";
+        document.querySelector(".card1").style.backgroundColor = "#fff"
+        document.querySelector(".card3").style.backgroundColor = "#fff"
+        document.querySelector(".card4").style.backgroundColor = "#fff"
+        document.getElementById("check1").style.scale = "0"
+        document.getElementById("check2").style.scale = "1"
+        document.getElementById("check3").style.scale = "0"
+        document.getElementById("check4").style.scale = "0"
+    }
+    else if (resposta == "c"){
+        document.querySelector(".card3").style.backgroundColor = "#5DADE2";
+        document.querySelector(".card1").style.backgroundColor = "#fff"
+        document.querySelector(".card2").style.backgroundColor = "#fff"
+        document.querySelector(".card4").style.backgroundColor = "#fff"
+        document.getElementById("check1").style.scale = "0"
+        document.getElementById("check2").style.scale = "0"
+        document.getElementById("check3").style.scale = "1"
+        document.getElementById("check4").style.scale = "0"
+    }
+    else if(resposta == "d"){
+        document.querySelector(".card4").style.backgroundColor = "#5DADE2";
+        document.querySelector(".card1").style.backgroundColor = "#fff"
+        document.querySelector(".card2").style.backgroundColor = "#fff"
+        document.querySelector(".card3").style.backgroundColor = "#fff"
+        document.getElementById("check1").style.scale = "0"
+        document.getElementById("check2").style.scale = "0"
+        document.getElementById("check3").style.scale = "0"
+        document.getElementById("check4").style.scale = "1"
+    }
+}
+    btnA.addEventListener("click", () => {
+        resposta = "a"
+        verificar()
+    })
+    btnB.addEventListener("click", () => {
+        resposta = "b"
+        verificar()
+    })
+    btnC.addEventListener("click", () => {
+        resposta = "c"
+        verificar()
+    })
+    btnD.addEventListener("click", () => {
+        resposta = "d"
+        verificar()
+    })
+ 
 
  
- 
- /*function respostaSelecionada() {
-    resposta.forEach(respostaEls => {
-        if(respostaEls.checked){
-           let resposta = respostaEls.id
-        }
-    })
-    console.log(resposta)
-    return resposta}*/
-    
  nextBtn.addEventListener("click", () => {
-    let resposta = respostaSelecionada()
-    
+    console.log(resposta);
     if (resposta == "a"){
         valor.push(0);
     }
