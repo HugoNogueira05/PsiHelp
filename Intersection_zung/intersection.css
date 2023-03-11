@@ -54,7 +54,7 @@ body{
 }
 #t{
     position: relative;
-    visibility: hidden;
+    visibility: collapse;
     padding: 5%;
     display: flex;
     justify-content: center;
@@ -81,14 +81,31 @@ a{
 }
 #card1:hover > h3{
     font-size: 1.4em;
+    position: relative;
+    height: 10vh;
+
 }
 #card2:hover > h3{
     font-size: 1.4em;
+    position: relative;
+    height: 10vh;
 }
 #card3:hover > h3{
     font-size: 1.4em;
+    position: relative;
+    height: 10vh;
 }
 h1{
     position: absolute;
     top: 5vh;
 }
+h3{
+    place-content: center;
+    place-items: center;
+    height: 40vh;
+    width: 23vw;
+    margin: auto;
+    display: flex;
+    font-size: 2em;
+}
+
