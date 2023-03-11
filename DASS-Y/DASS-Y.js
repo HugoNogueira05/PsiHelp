@@ -127,6 +127,7 @@ function verificar(){
         document.getElementById("check3").style.scale = "0"
         document.getElementById("check4").style.scale = "0"
         valor.pop()
+        resposta = ""
         perguntaAtual --
         document.getElementById("questao").style.transform = "translateX(50%) scale(0)" 
         setTimeout(move2, 300)
