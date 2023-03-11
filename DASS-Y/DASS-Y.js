@@ -119,8 +119,22 @@ function verificar(){
         verificar()
     })
  
+    let antesBtn = document.getElementById("antes")
+    antesBtn.addEventListener("click", () => {
+        if(perguntaAtual > 0) {
+        document.getElementById("check1").style.scale = "0"
+        document.getElementById("check2").style.scale = "0"
+        document.getElementById("check3").style.scale = "0"
+        document.getElementById("check4").style.scale = "0"
+        valor.pop()
+        perguntaAtual --
+        document.getElementById("questao").style.transform = "translateX(50%) scale(0)" 
+        setTimeout(move2, 300)
+        setTimeout(transitionIn, 600)
+        loadQuiz()
+    }})
 
- 
+
  nextBtn.addEventListener("click", () => {
     document.getElementById("check1").style.scale = "0"
     document.getElementById("check2").style.scale = "0"
@@ -157,7 +171,7 @@ function verificar(){
         let valorDepre = valor[2] + valor[4] + valor[9] + valor[12] + valor[15] + valor[16] + valor[20]
         let valorStress = valor[0] + valor[5] + valor[7] + valor[10] + valor[11] + valor[13] + valor[17]
         let valorAns = valor[1] + valor[3] + valor[6] + valor[8] + valor[14] + valor[18] + valor[19]
-        document.querySelector(".text").innerHTML = `<h2>Tiveste um resultado de ${valorFinal}/${dadosQuiz.length * 3}</h2>`
+        document.querySelector(".text").innerHTML = `<h2 id="total">Tiveste um resultado de ${valorFinal}/${dadosQuiz.length * 3}</h2>`
         resDepre.innerHTML = `<h3>Depressão : ${valorDepre}/21</h3>`
         
         if (valorDepre > 16){ concDepre.innerHTML = "Possui uma depressão extrema"}
@@ -173,7 +187,6 @@ function verificar(){
         else if (valorAns < 15){ concAns.innerHTML = "Possui uma ansiedade severa"}
         else{ concAns.innerHTML = "Possui uma ansiedade extrema"}
 
-
         resStress.innerHTML = `<h3>Stress : ${valorStress}/21</h3>`
         if (valorStress < 11){ concStress.innerHTML = "Os seus níveis de stress são saudáveis"}
         else if (valorStress < 13){ concStress.innerHTML = "os seus níveis de stress estão ligeiramente acima do normal"}
@@ -181,7 +194,10 @@ function verificar(){
         else if (valorStress < 18){ concStress.innerHTML = "Possui um stress severo"}
         else  {concStress.innerHTML = "Possui um stress extremo"}
 
-        restart.innerHTML = `<button onclick="location.reload()" id = "next">Recomeçar</button>`
+        restart.innerHTML = `<button onclick="location.reload()" class="button-82-pushable" role="button" id="restart2">
+        <span class="button-82-shadow"></span>
+        <span class="button-82-edge"></span>
+        <span class="button-82-front text"> Recomeçar </span></button>`
 
 
         document.querySelector(".container").style.visibility = "visible"
@@ -263,4 +279,7 @@ function verificar(){
     }
     function move(){
         document.getElementById("questao").style.transform = "translateX(50%) scale(0)"
+    }
+    function move2(){
+        document.getElementById("questao").style.transform = "translateX(-50%) scale(0)"
     }
