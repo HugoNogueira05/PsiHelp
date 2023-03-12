@@ -1,9 +1,13 @@
+const observer =  new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('show')
+        }
+        // else{
+        //     entry.target.classList.remove('show') --> se quiser q apareça a animação sempre q sai da tela
+        // }
+    })
+})
 
-// window.addEventListener("scroll" , function(){
-// let nav1  = document.getElementById("navbar")
-// let pScroll = document.getElementById("texto1")
-// let pScroll2 = document.getElementById("texto2")
-// nav1.classList.toggle("scrolled", window.scrollY > 0)
-// pScroll.classList.toggle("tScrolled", window.scrollY > 0)
-// pScroll2.classList.toggle("tScrolled", window.scrollY > 0)
-// });
+const hiddenElements = document.querySelectorAll('.hidden')
+hiddenElements.forEach((el) => observer.observe(el))

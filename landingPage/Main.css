@@ -40,14 +40,6 @@ body{
     text-shadow: 0 10px 6px #171717;
     transition: 600ms;
 }
-@media screen and (max-width: 800px) {
-    #dado{
-        font-size: 4vw;
-        margin:auto;
-        top: 40vh;
-        left: 20vw;
-    }
-}
  .navBar{
     position: fixed;
     top: 1vh;
@@ -74,41 +66,44 @@ body{
     text-decoration: none;
     z-index: 9999;
 }
-@media screen and (max-width: 800px){
-    .navBar{
-        position: fixed;
-        top: 1vh;
-        width: 0.5vw;
-        display: grid;
-        justify-content: flex-end  ;
-        align-items: center;
-        transition: 600ms;
-        padding: 40px 0px; 
-        font-size: 2vh;
-        font-family: 'Nunito', sans-serif;
-        font-weight: bold;
-        z-index: 0;
-        left: 65vw;
-    }  
-    .navBar2{
-        position: fixed;
-        top: 3vh;
-        width: 17vw;
-        transition: 600ms;
-        padding: 40px 0px;
-        font-size: 2vh;
-        font-family: 'Nunito', sans-serif;
-        font-weight: bold; 
-        z-index: 0;
-        right: 37vw;
-    }
-    .saude{
-        top: -3.5vh;
-        right: -2vw;
-    }
-    
+/* texto por baixo */
+#texto3{
+    position: relative;
+    top: 110vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    z-index: 0;    
+    padding: 5px;
+}  
+#texto4{
+    position: relative;
+    top: 113vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 2vh;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    padding: 5px;
 }
-    
+#gapN{
+    padding-left: 10px;
+}
+/* animação de scroll */
+
+.hidden{
+    opacity: 0;
+    transition: 500ms;
+    transform: translateY(100%);
+}
+.show{
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .testes:hover{
     font-size: 1.5em;

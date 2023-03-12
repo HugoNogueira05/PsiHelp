@@ -1,0 +1,88 @@
+#dado{
+    font-size: 4vw;
+    margin:auto;
+    top: 40vh;
+    left: 70vw;
+}
+body{
+    font-size: 100px;
+    display: block;
+    margin: 0;
+    overflow-x: hidden;
+}
+.navBar{
+    position: fixed;
+    top: 1vh;
+    width: 0.5vw;
+    display: grid;
+    justify-content: flex-end  ;
+    align-items: center;
+    transition: 600ms;
+    padding: 40px 0px; 
+    font-size: 2.5vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    z-index: 0;
+    left: 80vw;
+}
+.dropdown-menu1{
+    visibility: collapse;
+    position: absolute;
+    min-width: 158px;
+    z-index: 1;
+    transition: 300ms;
+    scale: 0;
+    left: -8vw;
+    top: 3vh;
+}
+.navBar2{
+    position: fixed;
+    top: 3vh;
+    width: 17vw;
+    transition: 600ms;
+    padding: 40px 0px;
+    font-size: 2.5vw;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold; 
+    z-index: 0;
+    left: 60vw;
+}
+.saude{
+    top: -2vh;
+    left: -5vw;
+}
+.banner{
+    position: relative;
+    width: 160vw;
+    height: 78vh;
+    aspect-ratio: 1.777777778;
+    background-image: url(./psihelp-bg.png);
+    background-size: cover;
+    z-index: -1;
+    transform: translateX(-60vw);
+}
+#texto3{
+    position: relative;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 2vh;
+    column-gap: 10px;
+    font-weight: bold;
+    padding: 8px;
+}
+#texto4{
+    position: relative;
+    top: 13vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 2vh;
+    column-gap: 10px;
+    font-weight: bold;
+    padding: 8px;
+}
+.img{
+    max-width: 50vw;
+}
