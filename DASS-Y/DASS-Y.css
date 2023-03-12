@@ -73,12 +73,14 @@ button {
     }
 .quiz-container{
     margin: 5px;
-    top: 3vh;
+    top: 10vh;
     padding: 10px;
     min-width: 200px;
     max-height: 80vh;
     font-size: 4vh;
     text-align: center;
+    position: relative;
+
     
 }
  #questao{
@@ -114,6 +116,7 @@ button {
 .logo:hover{
     height: 15vh;
 }
+/*conclusão circulos*/
 .container , .containerA , .containerD , .containerS{
     display: flex;
     background: transparent;
@@ -372,6 +375,7 @@ button {
   max-height: 38vh;
   width: 60vw;
 }
+/*conclusão circulos*/
 .card1 , .card2 , .card3, .card4{
   width: 40vw;
   margin: auto;
@@ -522,3 +526,104 @@ time, mark, audio, video {
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
 }
+/*navBar*/
+.navBar{
+  position: fixed;
+  top: 1vh;
+  width: 0.5vw;
+  display: grid;
+  justify-content: flex-end  ;
+  align-items: center;
+  transition: 600ms;
+  padding: 40px 0px; 
+  font-size: 2vh;
+  font-family: 'Nunito', sans-serif;
+  font-weight: bold;
+  z-index: 0;
+  left: 89vw;
+
+}
+.testes{
+  position: absolute;
+  font-size: 1,2vh;
+  transition: 600ms;
+  color: #fff;
+  padding: 15px;
+  cursor: default;
+  text-decoration: none;
+  z-index: 9999;
+}
+.testes:hover{
+  font-size: 1.5em;
+} 
+
+.testes2:hover{
+  font-size: 1.5em;
+}
+
+.dropdown-menu1{
+  visibility: collapse;
+  position: absolute;
+  min-width: 158px;
+  z-index: 1;
+  transition: 300ms;
+  scale: 0;
+  left: -2vw;
+  top: 3vh;
+}
+.navBar:hover .dropdown-menu1{
+  visibility: visible;
+  position: absolute;
+  transform: translate(3vw , 7vh);
+  scale: 1;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+} 
+@media screen and (min-width: 800px){
+
+  .navBar2{
+      position: fixed;
+      top: 1vh;
+      width: 14vw;
+      display: grid;
+      justify-content: flex-end  ;
+      align-items: center;
+      transition: 600ms;
+      padding: 40px 0px;
+      font-size: 2vh;
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold; 
+      z-index: 0;
+      left: 74vw;
+  } }
+  .saude{
+      position: absolute;
+      font-size: 1,2vh;
+      transition: 600ms;
+      color: #fff;
+      padding: 15px;
+      cursor: default;
+      text-decoration: none;
+      z-index: 9999;
+  }
+  .saude:hover{
+      font-size: 1.5em;
+  }
+  .dropdown-menu2{
+      visibility: collapse;
+      position: absolute;
+      min-width: 158px;
+      z-index: 1;
+      transition: 300ms;
+      scale: 0;
+      left: -2vw;
+      top: 3vh;
+  }
+  .navBar2:hover .dropdown-menu2{
+      visibility: visible;
+      position: absolute;
+      transform: translate(3vw , 7vh);
+      scale: 1;
+  }
