@@ -45,6 +45,7 @@ let btnC = document.getElementById("c");
 let btnD = document.getElementById("d");
 
 function limpar(){
+    resposta = ""
     document.querySelector(".card1").style.backgroundColor = "#fff"
     document.querySelector(".card2").style.backgroundColor = "#fff"
     document.querySelector(".card3").style.backgroundColor = "#fff"

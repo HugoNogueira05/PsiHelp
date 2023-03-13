@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
-
+*::-webkit-scrollbar {
+  display: none;
+}
 #next , #antes{
     position: relative;
     top: 10vh;
@@ -23,6 +25,7 @@
     width: 100vw;
     background-color: #171717;
     font-size: 2vh; 
+    z-index: -1;
 }
 #cards{
   position: relative; 
@@ -80,6 +83,7 @@ button {
     font-size: 4vh;
     text-align: center;
     position: relative;
+    z-index: -1;
 
     
 }
@@ -364,6 +368,7 @@ button {
       height: 55vh;
       font-size: 1.7vh;
       transform: translate(20vw, 20vh);
+      z-index: -1;
 }
   #questao{
   margin: 5px;
@@ -580,7 +585,24 @@ time, mark, audio, video {
 a{
   text-decoration: none;
   color: #fff;
-} 
+}
+@media screen and (min-width: 1080px){
+  .navBar2{
+      position: fixed;
+      top: 1vh;
+      width: 6vw;
+      display: grid;
+      justify-content: flex-end  ;
+      align-items: center;
+      transition: 600ms;
+      padding: 40px 0px;
+      font-size: 2vh;
+      font-family: 'Nunito', sans-serif;
+      font-weight: bold; 
+      z-index: 0;
+      left: 74vw;
+  } 
+}
 @media screen and (min-width: 800px){
 
   .navBar2{
@@ -615,7 +637,7 @@ a{
       visibility: collapse;
       position: absolute;
       min-width: 158px;
-      z-index: 1;
+      z-index: 3;
       transition: 300ms;
       scale: 0;
       left: -2vw;

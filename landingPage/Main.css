@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
-
+*::-webkit-scrollbar {
+    display: none;
+  }
 body{
     background: #171717;
     min-height: 200vh;
@@ -40,32 +42,6 @@ body{
     text-shadow: 0 10px 6px #171717;
     transition: 600ms;
 }
- .navBar{
-    position: fixed;
-    top: 1vh;
-    width: 0.5vw;
-    display: grid;
-    justify-content: flex-end  ;
-    align-items: center;
-    transition: 600ms;
-    padding: 40px 0px; 
-    font-size: 2vh;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    z-index: 0;
-    left: 89vw;
-
-} 
-.testes{
-    position: absolute;
-    font-size: 1,2vh;
-    transition: 600ms;
-    color: #fff;
-    padding: 15px;
-    cursor: default;
-    text-decoration: none;
-    z-index: 9999;
-}
 /* texto por baixo */
 #texto3{
     position: relative;
@@ -104,7 +80,34 @@ body{
     opacity: 1;
     transform: translateY(0);
 }
+/*navBar*/
+.navBar{
+    position: fixed;
+    top: 1vh;
+    width: 0.5vw;
+    display: grid;
+    justify-content: flex-end  ;
+    align-items: center;
+    transition: 600ms;
+    padding: 40px 0px; 
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    z-index: 0;
+    left: 89vw;
 
+} 
+.testes{
+    position: absolute;
+    font-size: 1,2vh;
+    transition: 600ms;
+    color: #fff;
+    padding: 15px;
+    cursor: default;
+    text-decoration: none;
+    z-index: 9999;
+    
+}
 .testes:hover{
     font-size: 1.5em;
 } 
