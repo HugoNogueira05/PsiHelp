@@ -42,10 +42,34 @@ body{
     text-shadow: 0 10px 6px #171717;
     transition: 600ms;
 }
+
 /* texto por baixo */
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+#projeto-container{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: center;
+    top: 105vh;
+    font-size: 1.4vw;
+    z-index: 1;
+    background-color: #fff;
+    height: 2.6vw;
+}
+#projeto{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8vw;
+    margin: 0;
+    left: 4vw;
+    font-family: 'Nunito', sans-serif;
+    width: 13vw;
+}
 #texto3{
     position: relative;
-    top: 110vh;
+    top: 111vh;
     display: flex;
     align-items: center;
     color: #fff;
@@ -70,7 +94,15 @@ body{
     padding-left: 10px;
 }
 /* animação de scroll */
-
+.hidden2{
+    transition: 1s;
+    width: 13vw;
+}
+.show2{
+    background-color: transparent;
+    width: 0vw;
+    
+}
 .hidden{
     opacity: 0;
     transition: 500ms;
