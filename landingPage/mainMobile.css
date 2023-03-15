@@ -10,46 +10,10 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
-.navBar{
-    position: fixed;
-    top: 1vh;
-    width: 0.5vw;
-    display: grid;
-    justify-content: flex-end  ;
-    align-items: center;
-    transition: 600ms;
-    padding: 40px 0px; 
-    font-size: 2.5vw;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    z-index: 0;
-    left: 80vw;
-}
-.dropdown-menu1{
-    visibility: collapse;
-    position: absolute;
-    min-width: 158px;
-    z-index: 1;
-    transition: 300ms;
+.navBar , .dropdown-menu1 , .navBar2 , .saude{
     scale: 0;
-    left: -8vw;
-    top: 3vh;
-}
-.navBar2{
-    position: fixed;
-    top: 3vh;
-    width: 17vw;
-    transition: 600ms;
-    padding: 40px 0px;
-    font-size: 2.5vw;
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold; 
-    z-index: 0;
-    left: 60vw;
-}
-.saude{
-    top: -2vh;
-    left: -5vw;
+    transition: 0ms;
+    visibility: collapse;
 }
 .banner{
     position: relative;
@@ -83,6 +47,68 @@ body{
     font-weight: bold;
     padding: 8px;
 }
+/*NavBar*/
 .img{
     max-width: 50vw;
+}
+.menuTele{
+    visibility: visible;
+    position: fixed;
+    top: 2%;
+    right: 1%;
+    aspect-ratio: 1;
+    height: 0.40em;
+    transition: 300ms;
+}
+.menuTele:hover{
+    aspect-ratio: 1;
+    height: 0.3em;
+    rotate: 90deg;
+}
+.navMobile{
+    visibility: hidden;
+    position: fixed;
+    background-color: #616161c0;
+    z-index: 1000;
+    height: 0.4em;
+    aspect-ratio: 1;
+    top: 2%;
+    right: 1%;
+}
+.navMobile:hover{
+    right: 0;
+    top: 0;
+    width: 40vw;
+    height: 100vh;
+    visibility: visible;
+    transition: 600ms;
+}
+.mobTestes, .mobSaude{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 5vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    top: 5vh;
+}
+/*Texto em baixo*/
+#projeto{
+    top: -20vh;
+    font-size: 3vw;
+    transition: 0ms;
+    width: 25vw;
+}
+#projeto-container{
+    transition: 0ms;
+}
+/*Footer*/
+#footer{
+    bottom: -100vh;
+    position: relative;
+}
+#footerTexto{
+    transform: translateY(-5vh);
 }
