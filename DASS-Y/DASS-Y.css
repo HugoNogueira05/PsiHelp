@@ -652,7 +652,7 @@ a{
   /*foooter*/
   @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
   #footer{
-      position: relative;
+      position: fixed;
       padding-left: 0.75vw;
       font-family: 'Rubik', sans-serif;
       color: #fff;
@@ -660,6 +660,7 @@ a{
       width: 70vw; 
       cursor: default;
       font-size: 0.85vw;
+      bottom: 0;
   }
   .logoFooter{
       position: relative;

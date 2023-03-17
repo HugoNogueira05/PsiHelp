@@ -36,7 +36,7 @@ const dadosQuiz = [
 ]
 
 
-let perguntaAtual = 0;
+let perguntaAtual = 20;
 let valor = []
 let resposta
 let btnA = document.getElementById("a");
@@ -155,9 +155,9 @@ function verificar(){
         valor.push(3)
     }
     if (resposta == "a" || resposta =="b" || resposta == "c" || resposta == "d"){
-        perguntaAtual++
         transitionOut()
         setTimeout(move, 300)
+        perguntaAtual++
         setTimeout(transitionIn, 600)
     } 
     if (perguntaAtual < dadosQuiz.length) {
