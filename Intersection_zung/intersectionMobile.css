@@ -1,0 +1,52 @@
+#cards{
+    display: table-column;
+    margin-top: 10vh;
+    aspect-ratio: 1;
+}
+.card{
+    margin-top: 5vh;
+    height: 20vh;
+    width: 35vw;
+    background-image: linear-gradient(to bottom right, #424242 , #131010);
+    border-radius: 10%;
+    cursor:pointer;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+h1{
+    position: absolute;
+    top: 7vh;
+    font-size: 1.9em;
+}
+h3{
+    place-content: center;
+    place-items: center;
+    height: 20vh;
+    width: 35vw;
+    margin: auto;
+    display: flex;
+    font-size: 1.4em;
+}
+#t{
+    visibility: collapse;
+}
+#card1:hover > .t1{
+    visibility: collapse;
+}
+#card2:hover > .t2{
+    visibility: collapse;
+}
+#card3:hover > .t3{
+    visibility: collapse;
+}
+.logo{
+    height: 10vh;
+    aspect-ratio: 1;
+    position: absolute;
+    transition: 600ms;
+    -webkit-user-drag: none;
+    top: 0vh;
+    left: 2vw;
+    z-index: 1;
+    position: fixed;
+    float: left;
+}

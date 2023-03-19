@@ -36,7 +36,7 @@ const dadosQuiz = [
 ]
 
 
-let perguntaAtual = 20;
+let perguntaAtual = 0;
 let valor = []
 let resposta
 let btnA = document.getElementById("a");

@@ -106,19 +106,5 @@ body{
 }
 /*Footer*/
 #footer{
-    top: 180vh;
-    position: absolute;
-}
-#footerTexto{
-    transform: translateY(-5vh);
-}
-@media screen and (max-width: 654px){
-    #footer{
-        
-        border: red solid;
-    }
-    #footerTexto{
-        transform: translateY(-5vh);
-    }
-    
+    visibility: collapse;
 }

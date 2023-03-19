@@ -47,7 +47,7 @@ button {
     
   }
   .card1 , .card2 , .card3, .card4{
-    width: 25vw;
+    width: 30vw;
     margin: auto;
     transition: 300ms ease-in;
     background-color: white;
@@ -76,7 +76,7 @@ button {
     }
 .quiz-container{
     margin: 5px;
-    top: 10vh;
+    top: 0vh;
     padding: 10px;
     min-width: 200px;
     max-height: 80vh;
