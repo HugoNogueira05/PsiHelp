@@ -234,9 +234,11 @@ a{
 /*footer*/
   @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 #footer{
-    position: fixed;
-    bottom: 0vh;
+    position: relative;
+    top: 130vh;
     padding-left: 0.75vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
     font-family: 'Rubik', sans-serif;
     color: #fff;
     height: 13vh;
