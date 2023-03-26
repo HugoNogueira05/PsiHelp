@@ -274,3 +274,6 @@ a{
 .navMobile{
     visibility: collapse;
 }
+.burger{
+    display: none;
+}

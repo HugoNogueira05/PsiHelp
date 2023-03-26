@@ -688,3 +688,6 @@ a{
   #colContactos{
       margin-top: 1em;
   }
+  .burger{
+    display: none;
+  }
