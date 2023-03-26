@@ -1,6 +1,6 @@
 #cards{
     display: table-column;
-    margin-top: 10vh;
+    margin-top: 12vh;
     aspect-ratio: 1;
 }
 .card{
@@ -13,9 +13,11 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
 }
 h1{
+    margin-left: 5px;
+    margin-right: 5px;
     position: absolute;
     top: 7vh;
-    font-size: 1.9em;
+    font-size: 1.6em;
 }
 h3{
     place-content: center;
@@ -27,16 +29,16 @@ h3{
     font-size: 1.4em;
 }
 #t{
-    visibility: collapse;
+    display: none;
 }
 #card1:hover > .t1{
-    visibility: collapse;
+    display: none;
 }
 #card2:hover > .t2{
-    visibility: collapse;
+    display: none;
 }
 #card3:hover > .t3{
-    visibility: collapse;
+    display: none;
 }
 .logo{
     height: 10vh;
