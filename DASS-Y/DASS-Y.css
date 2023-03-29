@@ -26,6 +26,8 @@
     background-color: #171717;
     font-size: 2vh; 
     z-index: -1;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 #cards{
   position: relative; 
@@ -689,5 +691,8 @@ a{
       margin-top: 1em;
   }
   .burger{
+    display: none;
+  }
+  .navMobile{
     display: none;
   }
