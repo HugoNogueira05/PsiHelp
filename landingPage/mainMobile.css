@@ -10,6 +10,7 @@ body{
     margin: 0;
     padding-bottom: 0;
     overflow-x: hidden;
+    position: relative;
 }
 .navBar , .dropdown-menu1 , .navBar2 , .saude{
     display: none;

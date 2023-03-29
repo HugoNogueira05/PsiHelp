@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <link href="contacto.css" rel="stylesheet">
+    
+    <a href="/landingPage/Main.html"><img class="logo" src="/landingPage/psihelp logo.png"></a>
+    <div class="navBar" id="navbar">
+                <p href="#" class="testes" id="texto1">Testes</p>
+                    <div class= "dropdown-menu1">
+                        <a href="/DASS-Y/DASS-Y.html">DASS-Y</a>
+                        <br>
+                        <br>
+                        <a href="/Intersection_zung/intersection.html">Escala de Zung</a>
+                    </div>
+    </div>
+    <div class="navBar2">
+        <p href="#" class="saude" id="texto2">Saúde Mental</p>
+            <div class= "dropdown-menu2">
+                <a href="/Doenças/doenças.html">Doenças</a>
+                <br>
+                <br>
+                <a href="#">Como ajudar ?</a>
+            </div>
+    </div>
+    <div class="fcf-body">
+    
+        <div id="fcf-form">
+        <h3 class="fcf-h3">Contacta-nos</h3>
+    
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contacto.php">
+            
+            <div class="fcf-form-group">
+                <label for="Name" class="fcf-label">Nome</label>
+                <div class="fcf-input-group">
+                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Email" class="fcf-label">Email</label>
+                <div class="fcf-input-group">
+                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <label for="Message" class="fcf-label">Mensagem</label>
+                <div class="fcf-input-group">
+                    <textarea id="Message" name="Message" class="fcf-form-control" rows="10" maxlength="20000" required></textarea>
+                </div>
+            </div>
+    
+            <div class="fcf-form-group">
+                <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Enviar</button>
+            </div>
+
+        </form>
+        </div>
+    
+    </div>
+    <div id="footer">
+        <img src="/landingPage/psihelp logo.png" class="logoFooter">
+        <div id="footerTexto">
+            <div id="colInforma">
+                <p id="titulo">Informa-te</p>
+                <a href="/Doenças/doenças.html" id="contacto">Doenças</a>
+                <a href="#">Como ajudar ?</a>
+            </div>
+            <div id="colTestes">
+                <p id="titulo">Recursos</p>
+                <a href="/Intersection_zung/intersection.html" id="contacto">Testes</a>
+            </div>
+            <div id="colContactos">
+                <a href="/Contacto/contacto.html" id="titulo" class="contacto">Contactos</a>
+                <p>psihelpp@psihelp.pt</p>
+            </div>
+        </div>
+    </div>
+    <label for="burger" class="burger">
+            <input id="burger" type="checkbox">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+    <div class="navMobile">
+        <a href="/Intersection_zung/intersection.html" class="mobTestes" >Testes</a>
+        <a href="/Doenças/doenças.html" class="mobSaude" >Doenças</a>
+        <a href="#" class="mobSaude" >Como ajudar ?</a>
+    </div>
+    
+    </body>
+    </html>

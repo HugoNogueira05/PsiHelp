@@ -1,0 +1,348 @@
+body{
+    background-color: #171717;
+}
+/*form*/
+#fcf-form {
+    display:block;
+}
+
+.fcf-body {
+    position: relative;
+    top: 10vh;
+    margin: 0;
+    font-family: -apple-system, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    padding: 30px;
+    padding-bottom: 10px;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    color: white;
+    z-index: 0;
+}
+
+.fcf-form-group {
+    margin-bottom: 1rem;
+}
+
+.fcf-input-group {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    width: 100%;
+}
+
+.fcf-form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    outline: none;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.fcf-form-control:focus {
+    border: 1px solid #313131;
+}
+
+select.fcf-form-control[size], select.fcf-form-control[multiple] {
+    height: auto;
+}
+
+textarea.fcf-form-control {
+    font-family: -apple-system, Arial, sans-serif;
+    height: auto;
+}
+
+label.fcf-label {
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+.fcf-credit {
+    padding-top: 10px;
+    font-size: 0.9rem;
+    color: #545b62;
+}
+
+.fcf-credit a {
+    color: #545b62;
+    text-decoration: underline;
+}
+
+.fcf-credit a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.fcf-btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .fcf-btn {
+        transition: none;
+    }
+}
+
+.fcf-btn:hover {
+    color: #212529;
+    text-decoration: none;
+}
+
+.fcf-btn:focus, .fcf-btn.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.fcf-btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.fcf-btn-primary:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.fcf-btn-primary:focus, .fcf-btn-primary.focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    border-radius: 0.3rem;
+}
+
+.fcf-btn-block {
+    display: block;
+    width: 100%;
+}
+
+.fcf-btn-block+.fcf-btn-block {
+    margin-top: 0.5rem;
+}
+
+input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block {
+    width: 100%;
+}
+/*Logo e navBar*/
+.logo{
+    height: 10vh;
+    aspect-ratio: 1;
+    position: absolute;
+    transition: 600ms;
+    -webkit-user-drag: none;
+    top: 1.1vh;
+    left: 2vw;
+    z-index: 1;
+    position: fixed;
+    float: left;
+}
+.logo:hover{
+    height: 15vh;
+}
+.navBar{
+    position: fixed;
+    top: 1vh;
+    width: 0.5vw;
+    display: grid;
+    justify-content: flex-end  ;
+    align-items: center;
+    transition: 600ms;
+    padding: 40px 0px; 
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    z-index: 0;
+    left: 89vw;
+
+} 
+.testes{
+    position: absolute;
+    font-size: 1,2vh;
+    transition: 600ms;
+    color: #fff;
+    padding: 15px;
+    cursor: default;
+    text-decoration: none;
+    z-index: 9999;
+    
+}
+.testes:hover{
+    font-size: 1.5em;
+} 
+
+.testes2:hover{
+    font-size: 1.5em;
+}
+
+.dropdown-menu1{
+    visibility: collapse;
+    position: absolute;
+    min-width: 158px;
+    z-index: 1;
+    transition: 300ms;
+    scale: 0;
+    left: -2vw;
+    top: 1vh;
+}
+.navBar:hover .dropdown-menu1{
+    visibility: visible;
+    position: absolute;
+    transform: translate(3vw , 7vh);
+    scale: 1;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (min-width: 1080px){
+    .navBar2{
+        position: fixed;
+        top: 1vh;
+        width: 6vw;
+        display: grid;
+        justify-content: flex-end  ;
+        align-items: center;
+        transition: 600ms;
+        padding: 40px 0px;
+        font-size: 2vh;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold; 
+        z-index: 0;
+        left: 74vw;
+        border: red solid;
+    } 
+}
+@media screen and (min-width: 800px){
+
+.navBar2{
+    position: fixed;
+    top: 1vh;
+    width: 14vw;
+    display: grid;
+    justify-content: flex-end  ;
+    align-items: center;
+    transition: 600ms;
+    padding: 40px 0px;
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold; 
+    z-index: 0;
+    left: 74vw;
+} }
+.saude{
+    position: absolute;
+    font-size: 1,2vh;
+    transition: 600ms;
+    color: #fff;
+    padding: 15px;
+    cursor: default;
+    text-decoration: none;
+    z-index: 9999;
+    border: red solid;
+}
+.saude:hover{
+    font-size: 1.5em;
+}
+.dropdown-menu2{
+    visibility: collapse;
+    position: absolute;
+    min-width: 158px;
+    z-index: 3;
+    transition: 300ms;
+    scale: 0;
+    left: -2vw;
+    top: 1vh;
+    border: red solid;
+}
+.navBar2:hover .dropdown-menu2{
+    visibility: visible;
+    position: absolute;
+    transform: translate(3vw , 7vh);
+    scale: 1;
+}
+/*Footer*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+#footer{
+    position: relative;
+    top: 12vh;
+    padding-left: 0.75vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #fff;
+    height: 13vh;
+    width: 70vw; 
+    cursor: default;
+    font-size: 0.85vw;
+    display: flex;
+}
+.logoFooter{
+    position: relative;
+    aspect-ratio: 1;
+    border-right: rgb(29, 146, 29) solid 1.5px;
+}
+#titulo{
+    font-weight: bold;
+}
+#footerTexto{
+    display:flex;
+    justify-content: space-between;
+    left: 2vw;
+    position: relative;
+    width: 60vw;
+
+}
+#colInforma a{
+    display: block;
+    margin-bottom: 2vh;
+}
+#colContactos{
+    margin-top: 1em;
+}
+.navMobile{
+    visibility: collapse;
+}
+.burger{
+    display: none;
+}
