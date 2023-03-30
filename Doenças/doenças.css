@@ -139,34 +139,6 @@ a{
     transform: translate(3vw , 7vh);
     scale: 1;
 }
-/*search filtro*/
-.container-input {
-    position: relative;
-    left: 80vw;
-    top: 10vh;
-  }
-  
-  .input {
-    width: 150px;
-    padding: 10px 0px 10px 40px;
-    border-radius: 9999px;
-    border: solid 1px #333;
-    transition: all .2s ease-in-out;
-    outline: none;
-    opacity: 0.8;
-  }
-  
-  .container-input svg {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translate(0, -50%);
-  }
-  
-  .input:focus {
-    opacity: 1;
-    width: 250px;
-  }
 /*footer*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 #footer{
@@ -217,85 +189,43 @@ a{
     font-family: 'Nunito', sans-serif;
     padding: 10px;
     margin-left: 2vw;
-    visibility: collapse;
-}
-#body2{
-    transition: 300ms;
 }
 #depressão > p{
-    width: 60vw;
     margin-left: 1vw;
     line-height: 1.5;
 }
 #depressão > ul{
-    list-style-type: none;
     text-decoration: none;
 }
 #titulo{
-    visibility: visible;
     display: flex;
 }
-/*Dropdown-arrow*/
-.arrow {
-    cursor: pointer;
-    aspect-ratio: 1.2;
-    margin-left: 2vw;
+/*Ansiedade*/
+#ansiedade{
+    color: #fff;
     position: relative;
-    transition: transform 0.1s;
-    width: 1.4vw;
-    rotate: 90deg;
-  }
-  
-  .arrow-top, .arrow-bottom {
-    background-color: #666;
-    height: 4px;
-    left: -5px;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-  }
-  
-  .arrow-top:after, .arrow-bottom:after {
-    background-color: #fff;
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    transition: all 0.15s;
-  }
-  
-  .arrow-top {
-    transform: rotate(45deg);
-    transform-origin: bottom right;
-  }
-  
-  .arrow-top:after {
-    left: 100%;
-    right: 0;
-    transition-delay: 0s;
-  }
-  
-  .arrow-bottom {
-    transform: rotate(-45deg);
-    transform-origin: top right;
-  }
-  
-  .arrow-bottom:after {
-    left: 0;
-    right: 100%;
-    transition-delay: 0.15s;
-  }
-  
-  .arrow:hover .arrow-top:after {
-    left: 0;
-    transition-delay: 0.15s;
-  }
-  
-  .arrow:hover .arrow-bottom:after {
-    right: 0;
-    transition-delay: 0s;
-  }
-  
-  .arrow:active {
-    transform: scale(0.9);
-  }
+    top: 6vh;
+    margin-left: 2vw;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;  
+}
+#ansiedade > p{
+    margin-left: 1vw;
+    line-height: 1.5;
+}
+#ansiedade > ul{
+    text-decoration: none;
+}
+/*Stress*/
+#stress{
+    color: #fff;
+    position: relative;
+    top: 6vh;
+    margin-left: 2vw;
+    padding: 10px;
+    font-family: 'Nunito', sans-serif;  
+}
+#ansiedade > p{
+    margin-left: 1vw;
+    line-height: 1.5;
+}

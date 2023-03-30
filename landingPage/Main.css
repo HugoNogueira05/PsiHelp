@@ -156,7 +156,7 @@ body{
     transition: 300ms;
     scale: 0;
     left: -2vw;
-    top: 1vh;
+    top: 1.3vh;
 }
 .navBar:hover .dropdown-menu1{
     visibility: visible;
@@ -223,7 +223,7 @@ a{
     transition: 300ms;
     scale: 0;
     left: -2vw;
-    top: 1vh;
+    top: 1.3vh;
 }
 .navBar2:hover .dropdown-menu2{
     visibility: visible;
