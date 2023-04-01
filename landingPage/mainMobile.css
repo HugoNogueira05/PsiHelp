@@ -22,6 +22,7 @@ body{
     aspect-ratio: 1.777777778;
     background-image: url(./psihelp-bg.png);
     background-size: cover;
+    background-position-x: center;
     z-index: -1;
     transform: translateX(-60vw);
 }

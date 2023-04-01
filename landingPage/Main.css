@@ -27,6 +27,7 @@ body{
     height: 100vh;
     background-image: url(./psihelp-bg.png);
     background-size: cover;
+    background-position-x: center;
     z-index: -1;
     top: 0%
 }
@@ -235,7 +236,7 @@ a{
   @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
   #footer{
     position: relative;
-    top: 115vh;
+    top: 120vh;
     padding-left: 0.75vw;
     margin-bottom: 0;
     padding-bottom: 0;
