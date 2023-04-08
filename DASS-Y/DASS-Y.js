@@ -36,7 +36,7 @@ const dadosQuiz = [
 ]
 
 
-let perguntaAtual = 0;
+let perguntaAtual = 20;
 let valor = []
 let resposta
 let btnA = document.getElementById("a");
@@ -165,9 +165,8 @@ function verificar(){
         
     }
     else {
-        document.getElementById("publicidade").style.visibility = "collapse";
         quiz.remove()
-        conclusao.style.visibility = "visible"
+        conclusao.style.display = "block";
         let valorFinal = 0
         for (let n = 0 ; n < 21; n++) { valorFinal = valor[n] + valorFinal}
         let valorDepre = valor[2] + valor[4] + valor[9] + valor[12] + valor[15] + valor[16] + valor[20]

@@ -9,7 +9,9 @@
   }
   #restart{
     position: relative;
-    width: 100vw;
+    width: 100%;
+    display: flex;
+    place-content: center;
     top: 1vh;
   }
   #restart2{
@@ -123,38 +125,69 @@ button {
     height: 15vh;
 }
 /*conclusão circulos*/
-.container , .containerA , .containerD , .containerS{
-    display: flex;
-    background: transparent;
-    border-radius: 10px;
-    width: 15vw;
-    aspect-ratio: 1;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 40px;
-    visibility: hidden;
-    justify-content: center;
-    margin: auto;
-    top: 15vh;
-    text-align: center; 
+.container{
+  grid-area: header;
+ }
+ .containerD{
+  grid-area: depre;
+ }
+ .containerA{
+  grid-area: ans;
+ }
+ .containerS{
+  grid-area: stress;
+ }
+.cards{
+  display: grid;
+  grid-template:  'header header header'
+                  'depre ans stress';
+  gap: 25px;
+  padding: 20px;
 
+}
+.container, .containerD, .containerS, .containerA{
+  border: rgb(43, 43, 43) solid 1px;
+  background-color: #3a3a3a1c;
+  place-content: center;
+  border-radius: 15px;
+  height: 40vh;
+}
+.container{
+ grid-area: header;
 }
 .circular-progress{
     position: relative;
-    height: 250px;
-    width: 250px;
+    height: 260px;
+    width: 260px;
     background: conic-gradient(#1e1c20 3.6deg, #000000 0deg);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    left: 43%;
+    top: 10%;
+}
+.container > h6{
+  position: relative;
+  width: 100%;
+  top: 5%;
+  font-size: 1.2em;
+  place-content: center;
+  display: flex;
+}
+.container > p{
+  position: relative;
+  width: 100%;
+  top: 15%;
+  font-size: 1.2em;
+  place-content: center;
+  display: flex;
 }
 .circular-progress::before{
     content: "";
     position: absolute;
-    height: 210px;
-    width: 210px;
+    height: 220px;
+    width: 220px;
     border-radius: 50%;
     background-color: #fff;
 }
@@ -163,13 +196,6 @@ button {
     font-size: 40px;
     font-weight: 600;
     color: #262429;
-}
-.text , .textA , .textS , .textD, .total{
-    font-size: 2vh;
-    font-weight: bold;
-    color: rgb(255, 255, 255);
-    text-align: center ;
-    
 }
 .circular-progressD{
   position: relative;
@@ -180,6 +206,8 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  left: 30%;
+  top: 10%;
 
 }
 .circular-progressD::before{
@@ -189,6 +217,22 @@ button {
   width: 210px;
   border-radius: 50%;
   background-color: #fff;
+}
+.containerD > h6{
+  position: relative;
+  width: 100%;
+  top: 5%;
+  font-size: 1.2em;
+  place-content: center;
+  display: flex;
+}
+.containerD > p{
+  position: relative;
+  width: 100%;
+  top: 15%;
+  font-size: 1.2em;
+  place-content: center;
+  display: flex;
 }
 .progress-valueD{
   position: relative;
@@ -205,7 +249,24 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-
+  left: 26%;
+  top: 10%;
+}
+.containerA > h6{
+  position: relative;
+  width: 100%;
+  top: 5%;
+  font-size: 1.2em;
+  place-content: center;
+  display: flex;
+}
+.containerA > p{
+  position: relative;
+  width: 100%;
+  top: 15%;
+  font-size: 1.2em;
+  place-content: center;
+  display: flex;
 }
 .circular-progressA::before{
   content: "";
@@ -230,7 +291,25 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  left: 28%;
+  top: 10%;
 
+}
+.containerS > h6{
+  position: relative;
+  width: 100%;
+  top: 5%;
+  font-size: 1.2em;
+  place-content: center;
+  display: flex;
+}
+.containerS > p{
+  position: relative;
+  width: 100%;
+  top: 15%;
+  font-size: 1.2em;
+  place-content: center;
+  display: flex;
 }
 .circular-progressS::before{
   content: "";
@@ -247,14 +326,8 @@ button {
   color: #312f35;
 }
 .conclusao{
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 100vw;
-  visibility: hidden;
-  margin-top: 20vh;
+  display: none;
 }
-
 /* botão */
 .button-82-pushable {
   position: relative;
@@ -654,15 +727,16 @@ a{
   /*foooter*/
   @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
   #footer{
-      position: fixed;
+      position: relative;
       padding-left: 0.75vw;
       font-family: 'Rubik', sans-serif;
       color: #fff;
       height: 13vh;
-      width: 70vw; 
+      width: 80vw; 
       cursor: default;
       font-size: 0.85vw;
-      bottom: 0;
+      display: block;
+      top: 13vw;
   }
   .logoFooter{
       position: relative;

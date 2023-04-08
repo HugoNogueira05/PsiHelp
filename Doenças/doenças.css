@@ -1,6 +1,9 @@
 *::-webkit-scrollbar {
     display: none;
   }
+p{
+    font-size: 2vh;
+}
 body{
     background: #171717;
 }
@@ -238,7 +241,13 @@ a{
 .doencas_top {
     width: 100%;
     overflow: hidden;
-    padding-top: 100px;
+    background-image: url(/Doenças/doencas_img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    font-family: 'Nunito', sans-serif; 
+    padding: 0;
+    margin: 0;
 }
 
 .title_and_image {
@@ -257,26 +266,12 @@ a{
 }
 
 .title_text > h1 {
+    position: relative;
     text-align: center;
     color: white;
-    font-family: 'Nunito', sans-serif
+    font-family: 'Nunito', sans-serif;
+    top: 8vh;
 }
-
-.doencas_img {
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-.doencas_img {
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-}
-
-.doencas_img > img {
-    max-width: 100%;
-    height: auto;
-}
-
 .conteudo {
     padding: 0px 18px;
 }
@@ -291,7 +286,8 @@ a{
     margin-top: 90px;
     padding: 0px 28px;
     color: white;
-    font-family: 'Nunito', sans-serif
+    font-family: 'Nunito', sans-serif;
+    font-size: 3vw;
 }
 
 @media only screen and (min-width: 1060px) {
@@ -299,7 +295,82 @@ a{
         padding: 0px 190px;
     }
 }
-
-.link_testes > a{
-    color:rgb(0, 208, 255)
+/*animação*/
+.hidden{
+    opacity: 0;
+    transition: 500ms;
+    transform: translateY(100%);
 }
+.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+/*botão de Teste*/
+.box {
+    width: 14vw;
+    height: auto;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    font-weight: 900;
+    left: 40vw;
+    font-size: 20px;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .box:hover:before {
+    border-color: #818181;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: #818181;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: rgb(120, 145, 253);
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
