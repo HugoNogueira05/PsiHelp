@@ -75,6 +75,9 @@ a{
     text-decoration: none;
     color: #fff;
 }
+.burger,.mobTestes,.mobSaude,.mobSaude2{
+    display: none;
+}
 @media screen and (min-width: 1080px){
     .navBar2{
         position: fixed;
@@ -178,7 +181,7 @@ a{
     margin-top: 1em;
 }
 .navMobile{
-    visibility: collapse;
+    display: none;
 }
 /*Depressão-texto*/
 #depressão{

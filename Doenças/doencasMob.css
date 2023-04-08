@@ -1,59 +1,7 @@
-#dado{
-    font-size: 4vw;
-    margin:auto;
-    top: 40vh;
-    left: 70vw;
-}
-body{
-    font-size: 100px;
-    display: block;
-    margin: 0;
-    padding-bottom: 0;
-    overflow-x: hidden;
-    max-height: 150vh;
-}
+/*NavBar*/
 .navBar , .dropdown-menu1 , .navBar2 , .saude{
     display: none;
 }
-.banner{
-    position: relative;
-    width: 160vw;
-    height: 78vh;
-    aspect-ratio: 1.777777778;
-    background-image: url(./psihelp-bg.png);
-    background-size: cover;
-    background-position-x: center;
-    z-index: -1;
-    transform: translateX(-60vw);
-}
-#texto3{
-    position: relative;
-    top: 10vh;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-size: 2vh;
-    column-gap: 10px;
-    font-weight: bold;
-    padding: 8px;
-}
-#texto4{
-    position: relative;
-    top: 13vh;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-size: 2vh;
-    column-gap: 10px;
-    font-weight: bold;
-    padding: 8px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-.img{
-    max-width: 50vw;
-}
-/*NavBar*/
 .navMobile{
     display: none;
     visibility: visible;
@@ -66,16 +14,38 @@ body{
     top: 0;
     transition: 0.3s cubic-bezier(.84,.48,.11,.78);
 }
-.mobTestes, .mobSaude{
+.mobTestes{
+    display: block;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
-    position: relative;
+    position: absolute;
     color: #fff;
     font-size: 4vw;
-    margin-bottom: 5vh;
+    top: 10vh;
     margin-left: 5vw;
     margin-right: 5vw;
-    top: 5vh;
+}
+.mobSaude{
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    font-size: 4vw;
+    top: 20vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+.mobSaude2{
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    position: absolute;
+    color: #fff;
+    font-size: 4vw;
+    top: 30vh;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }
 /*selector*/
 .burger {
@@ -140,17 +110,6 @@ body{
     top: 28px;
     left: 5px;
   }
-/*Texto em baixo*/
-#projeto{
-    top: -20vh;
-    font-size: 3vw;
-    transition: 0ms;
-    width: 25vw;
-}
-#projeto-container{
-    transition: 0ms;
-}
-/*Footer*/
-#footer{
-  display: none;
-}
+  #footer{
+    display: none;
+  }
