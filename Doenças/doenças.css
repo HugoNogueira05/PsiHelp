@@ -3,7 +3,6 @@
   }
 body{
     background: #171717;
-    min-height: 200vh;
 }
 .logo{
     height: 10vh;
@@ -33,7 +32,7 @@ body{
     font-size: 2vh;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
-    z-index: 0;
+    z-index: 1;
     left: 89vw;
 
 } 
@@ -89,7 +88,7 @@ a{
         font-size: 2vh;
         font-family: 'Nunito', sans-serif;
         font-weight: bold; 
-        z-index: 0;
+        z-index: 1;
         left: 74vw;
     } 
 }
@@ -107,7 +106,7 @@ a{
     font-size: 2vh;
     font-family: 'Nunito', sans-serif;
     font-weight: bold; 
-    z-index: 0;
+    z-index: 1;
     left: 74vw;
 } }
 .saude{
@@ -204,7 +203,7 @@ a{
 #ansiedade{
     color: #fff;
     position: relative;
-    top: 6vh;
+    top: 14vh;
     margin-left: 2vw;
     padding: 10px;
     font-family: 'Nunito', sans-serif;  
@@ -224,8 +223,80 @@ a{
     margin-left: 2vw;
     padding: 10px;
     font-family: 'Nunito', sans-serif;  
+    margin-top: 70px;
 }
 #ansiedade > p{
     margin-left: 1vw;
     line-height: 1.5;
+}
+
+
+/*mudanças solha*/
+.doencas_top {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+.title_and_image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_text {
+    width: 100%;
+}
+
+.title_text > h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Nunito', sans-serif
+}
+
+.doencas_img {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.doencas_img {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
+
+.doencas_img > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.conteudo {
+    padding: 0px 18px;
+}
+
+@media only screen and (min-width: 1060px) {
+    .conteudo {
+        padding: 0px 180px;
+    }
+}
+
+.link_testes {
+    margin-top: 90px;
+    padding: 0px 28px;
+    color: white;
+    font-family: 'Nunito', sans-serif
+}
+
+@media only screen and (min-width: 1060px) {
+    .link_testes {
+        padding: 0px 190px;
+    }
+}
+
+.link_testes > a{
+    color:rgb(0, 208, 255)
 }
