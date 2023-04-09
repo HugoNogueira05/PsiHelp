@@ -2,10 +2,14 @@
 *::-webkit-scrollbar {
   display: none;
 }
+.botoes{
+  display: grid;
+  grid-template: auto/ min-content min-content;
+  place-content: center;
+}
 #next , #antes{
     position: relative;
     top: 10vh;
-    
   }
   #restart{
     position: relative;
@@ -35,8 +39,8 @@
   position: relative; 
   top: 5vh;  
   display: grid;
-  grid-template-rows: 4;
-  grid-template-columns: 1;
+  grid-template: auto auto auto auto / max-content;
+  place-content: center;
   row-gap: 2vh;
 }
 button {
@@ -51,7 +55,7 @@ button {
     
   }
   .card1 , .card2 , .card3, .card4{
-    width: 30vw;
+    width: max-content;
     margin: auto;
     transition: 300ms ease-in;
     background-color: white;
@@ -65,10 +69,12 @@ button {
   }
   #check1 , #check2 , #check3 , #check4{
     visibility: visible;
-    height: 3vh;
+    height: 2vh;
     aspect-ratio: 1;
     scale: 0;
     transition: 300ms;
+    position: relative;
+    display: inline-flex;
   }
 
 .resposta{
@@ -79,15 +85,15 @@ button {
     position: absolute;
     }
 .quiz-container{
-    margin: 5px;
-    top: 0vh;
-    padding: 10px;
-    min-width: 200px;
-    max-height: 80vh;
-    font-size: 4vh;
-    text-align: center;
-    position: relative;
-    z-index: -1;
+  margin: 5px;
+  top: 3vh;
+  padding: 10px;
+  min-width: 200px;
+  max-height: 80vh;
+  font-size: 4vh;
+  text-align: center;
+  position: relative;
+  z-index: -1;
 
     
 }
@@ -157,171 +163,171 @@ button {
 }
 .circular-progress{
     position: relative;
-    height: 260px;
-    width: 260px;
+    height: 32.27272727vh;
+    aspect-ratio: 1;
     background: conic-gradient(#1e1c20 3.6deg, #000000 0deg);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 43%;
-    top: 10%;
 }
 .container > h6{
   position: relative;
   width: 100%;
-  top: 5%;
-  font-size: 1.2em;
+  top: 2%;
+  font-size: 2vh;
   place-content: center;
   display: flex;
 }
 .container > p{
   position: relative;
   width: 100%;
-  top: 15%;
-  font-size: 1.2em;
+  top: 3%;
+  font-size: 2.5vh;
   place-content: center;
   display: flex;
 }
 .circular-progress::before{
     content: "";
     position: absolute;
-    height: 220px;
-    width: 220px;
+    height: 27vh;
+    aspect-ratio: 1;
     border-radius: 50%;
     background-color: #fff;
 }
 .progress-value{
     position: relative;
-    font-size: 40px;
+    font-size: 2.5vh;
     font-weight: 600;
     color: #262429;
 }
+.circulo{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top: 2%;
+}
 .circular-progressD{
   position: relative;
-  height: 250px;
-  width: 250px;
+  height: 32.27272727vh;
+  aspect-ratio: 1;
   background: conic-gradient(#29272c 3.6deg, #fff 0deg);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 30%;
-  top: 10%;
+
 
 }
 .circular-progressD::before{
   content: "";
   position: absolute;
-  height: 210px;
-  width: 210px;
+  height: 27vh;
+  aspect-ratio: 1;
   border-radius: 50%;
   background-color: #fff;
 }
 .containerD > h6{
   position: relative;
   width: 100%;
-  top: 5%;
-  font-size: 1.2em;
+  top: 2%;
+  font-size: 2.5vh;
   place-content: center;
   display: flex;
 }
 .containerD > p{
   position: relative;
   width: 100%;
-  top: 15%;
-  font-size: 1.2em;
+  top: 3%;
+  font-size: 2vh;
   place-content: center;
   display: flex;
 }
 .progress-valueD{
   position: relative;
-  font-size: 40px;
+  font-size: 2.5vh;
   font-weight: 600;
   color: #232225;
 }
 .circular-progressA{
   position: relative;
-  height: 250px;
-  width: 250px;
+  height: 32.27272727vh;
+  aspect-ratio: 1;
   background: conic-gradient(#2f2e31 3.6deg, #fff 0deg);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 26%;
-  top: 10%;
 }
 .containerA > h6{
   position: relative;
   width: 100%;
-  top: 5%;
-  font-size: 1.2em;
+  top: 2%;
+  font-size: 2.5vh;
   place-content: center;
   display: flex;
 }
 .containerA > p{
   position: relative;
   width: 100%;
-  top: 15%;
-  font-size: 1.2em;
+  top: 3%;
+  font-size: 2vh;
   place-content: center;
   display: flex;
 }
 .circular-progressA::before{
   content: "";
   position: absolute;
-  height: 210px;
-  width: 210px;
+  height: 27vh;
+  aspect-ratio: 1;
   border-radius: 50%;
   background-color: #fff;
 }
 .progress-valueA{
   position: relative;
-  font-size: 40px;
+  font-size: 2.5vh;
   font-weight: 600;
   color: #201e22;
 }
 .circular-progressS{
   position: relative;
-  height: 250px;
-  width: 250px;
+  height: 32.27272727vh;
+  aspect-ratio: 1;
   background: conic-gradient(#302e33 3.6deg, #fff 0deg);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  left: 28%;
-  top: 10%;
 
 }
 .containerS > h6{
   position: relative;
   width: 100%;
-  top: 5%;
-  font-size: 1.2em;
+  top: 2%;
+  font-size: 2.5vh;
   place-content: center;
   display: flex;
 }
 .containerS > p{
   position: relative;
   width: 100%;
-  top: 15%;
-  font-size: 1.2em;
+  top: 3%;
+  font-size: 2vh;
   place-content: center;
   display: flex;
 }
 .circular-progressS::before{
   content: "";
   position: absolute;
-  height: 210px;
-  width: 210px;
+  height: 27vh;
+  aspect-ratio: 1;
   border-radius: 50%;
   background-color: #fff;
 }
 .progress-valueS{
   position: relative;
-  font-size: 40px;
+  font-size: 2.5vh;
   font-weight: 600;
   color: #312f35;
 }
@@ -435,15 +441,14 @@ button {
 /* telemovel */
 @media screen and (max-width: 800px) {
   .quiz-container{
-      margin: 5px;
-      padding: 10px;
-      border-radius: 5%;
-      min-width: 200px;
-      width: 70vw;
-      height: 55vh;
-      font-size: 1.7vh;
-      transform: translate(20vw, 20vh);
-      z-index: -1;
+    position: relative;
+    top: 15vw;
+    display: grid;
+    grid-template: auto auto/ auto;
+    place-content: center;
+    margin: 0;
+    font-size: 1.7vh;
+    z-index: -1;
 }
   #questao{
   margin: 5px;
