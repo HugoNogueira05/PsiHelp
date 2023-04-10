@@ -729,49 +729,45 @@ a{
       transform: translate(3vw , 7vh);
       scale: 1;
   }
-  /*foooter*/
-  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
-  #footer{
-      position: relative;
-      padding-left: 0.75vw;
-      font-family: 'Rubik', sans-serif;
-      color: #fff;
-      height: 13vh;
-      width: 80vw; 
-      cursor: default;
-      font-size: 0.85vw;
-      display: block;
-      top: 13vw;
-  }
-  .logoFooter{
-      position: relative;
-      aspect-ratio: 1;
-      width: 6vw;
-      border-right: rgb(29, 146, 29) solid 1.5px;
-  }
-  #titulo{
-      font-weight: bold;
-      margin-bottom: 1em;
-  }
-  #footerTexto{
-      display:flex;
-      justify-content: space-between;
-      transform: translateY(-12vh);
-      left: 8vw;
-      position: relative;
-      width: 60vw;
-  
-  }
-  #colInforma a{
-      display: block;
-      margin-bottom: 2vh;
-  }
-  #colContactos{
-      margin-top: 1em;
-  }
-  .burger{
-    display: none;
-  }
-  .navMobile{
-    display: none;
-  }
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+#footer{
+  display: grid;
+  grid-template: auto / 10vw auto auto auto;
+  column-gap: 1vw;
+  position: relative;
+  bottom: -20vh;
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  cursor: default;
+  font-size: 0.85vw;
+}
+.logoFooter{
+  aspect-ratio: 1;
+  border-right: rgb(29, 146, 29) solid 1.5px;
+  max-width: 10vw;
+}
+#titulo{
+  font-weight: bold;
+}
+#colInforma a{
+  display: block;
+  margin-bottom: 2vh;
+  font-weight: normal;
+}
+#colContactos{
+  margin-top: 1em;
+}
+#colContactos p{
+  font-weight: normal;
+}
+#colTestes a{
+  font-weight: normal;
+}
+.navMobile{
+  visibility: collapse;
+  display: none;
+}
+.burger{
+  display: none;
+}

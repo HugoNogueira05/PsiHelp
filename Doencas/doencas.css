@@ -148,44 +148,37 @@ a{
 /*footer*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
 #footer{
-    position: relative;
-    top: 12vh;
-    padding-left: 0.75vw;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    font-family: 'Rubik', sans-serif;
-    color: #fff;
-    height: 13vh;
-    width: 70vw; 
-    cursor: default;
-    font-size: 0.85vw;
-    display: flex;
+  display: grid;
+  grid-template: auto / 10vw auto auto auto;
+  column-gap: 1vw;
+  position: relative;
+  bottom: 0;
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  cursor: default;
+  font-size: 0.85vw;
 }
 .logoFooter{
-    position: relative;
-    aspect-ratio: 1;
-    border-right: rgb(29, 146, 29) solid 1.5px;
+  aspect-ratio: 1;
+  border-right: rgb(29, 146, 29) solid 1.5px;
+  max-width: 10vw;
 }
 #titulo{
-    font-weight: bold;
-}
-#footerTexto{
-    display:flex;
-    justify-content: space-between;
-    left: 2vw;
-    position: relative;
-    width: 60vw;
-
+  font-weight: bold;
 }
 #colInforma a{
-    display: block;
-    margin-bottom: 2vh;
+  display: block;
+  margin-bottom: 2vh;
 }
 #colContactos{
-    margin-top: 1em;
+  margin-top: 1em;
 }
 .navMobile{
-    display: none;
+  visibility: collapse;
+  display: none;
+}
+.burger{
+  display: none;
 }
 /*Depressão-texto*/
 #depressão{
