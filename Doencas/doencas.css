@@ -6,6 +6,7 @@ p{
 }
 body{
     background: #171717;
+    margin: 0;
 }
 .logo{
     height: 10vh;
@@ -241,7 +242,7 @@ a{
 .doencas_top {
     width: 100%;
     overflow: hidden;
-    background-image: url(/Doenças/doencas_img.jpg);
+    background-image: url(/Doencas/doencas_img.jpg);
     background-size: cover;
     background-position: center;
     height: 35vh;

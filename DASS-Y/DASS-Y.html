@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DASS-Y</title>
 </head>
-    <title>DASS-Y</title>
-    <link rel = "stylesheet" href="DASS-Y.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 912px)" href="DASS-YMob.css" />
+<title>DASS-Y</title>
+<link rel="stylesheet" href="DASS-Y.css">
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 912px)" href="DASS-YMob.css" />
 </head>
-<a href="/landingPage/Main.html"><img class="logo" src="/landingPage/psihelp logo.png"></a>
+<a href="/index.html"><img class="logo" src="/psihelp logo.png"></a>
 <div class="navBar" id="navbar">
     <p href="#" class="testes" id="texto1">Testes</p>
-        <div class= "dropdown-menu1">
-            <a href="/DASS-Y/DASS-Y.html">DASS-Y</a>
-            <br>
-            <br>
-            <a href="/Intersection_zung/intersection.html">Escala de Zung</a>
-        </div>
+    <div class="dropdown-menu1">
+        <a href="/DASS-Y/DASS-Y.html">DASS-Y</a>
+        <br>
+        <br>
+        <a href="/Intersection_zung/intersection.html">Escala de Zung</a>
+    </div>
 </div>
 <div class="navBar2">
-<p href="#" class="saude" id="texto2">Saúde Mental</p>
-<div class= "dropdown-menu2">
-    <a href="#">Doenças</a>
-    <br>
-    <br>
-    <a href="#">Como Ajudar?</a>
+    <p href="#" class="saude" id="texto2">Saúde Mental</p>
+    <div class="dropdown-menu2">
+        <a href="/Doenças/doencas.html">Doenças</a>
+        <br>
+        <br>
+        <a href="#">Como Ajudar?</a>
+    </div>
 </div>
-</div>
+
 <body id="body">
-    <div class = "quiz-container" id="quiz">
+    <div class="quiz-container" id="quiz">
         <h3>Responda conforme se sentiu na última semana:</h3>
-        <div id="questao"><h2 id="p"></h2>
+        <div id="questao">
+            <h2 id="p"></h2>
             <div id="cards">
                 <div class="card1">
-                    <img src="./🦆 icon _tick_.png" id="check1">
-                    <button id="a" name="resposta" class= "resposta">Discordo</button>
+                    <img src="./icon_tick_.png" id="check1">
+                    <button id="a" name="resposta" class="resposta">Discordo</button>
                 </div>
                 <div class="card2">
-                    <img src="./🦆 icon _tick_.png" id="check2">
+                    <img src="./icon_tick_.png" id="check2">
                     <button type="button" name="resposta" id="b" class="resposta">Não discordo totalmente</button>
                 </div>
                 <div class="card3">
-                    <img src="./🦆 icon _tick_.png" id="check3">
+                    <img src="./icon_tick_.png" id="check3">
                     <button type="button" name="resposta" id="c" class="resposta">Concordo parcialmente</button>
                 </div>
                 <div class="card4">
-                    <img src="./🦆 icon _tick_.png" id="check4">
+                    <img src="./icon_tick_.png" id="check4">
                     <button type="button" name="resposta" id="d" class="resposta">Concordo totalmente</button>
-                    
-                    
+
+
                 </div>
             </div>
             <div class="botoes">
@@ -58,14 +61,14 @@
                     <span class="button-82-shadow"></span>
                     <span class="button-82-edge"></span>
                     <span class="button-82-front text">
-                      Próxima pergunta
+                        Próxima pergunta
                     </span>
-                  </button>
-                  <button class="button-82-pushable" role="button1" id="antes">
+                </button>
+                <button class="button-82-pushable" role="button1" id="antes">
                     <span class="button-82-shadow"></span>
                     <span class="button-82-edge"></span>
                     <span class="button-82-front text">
-                      Pergunta Anterior
+                        Pergunta Anterior
                     </span>
                 </button>
             </div>
@@ -74,75 +77,76 @@
     <div class="conclusao">
         <div class="cards">
             <div class="container">
-                <h6 class="textS" >Total</h6>
-            <div class="circulo">
-                <div class="circular-progress">
-                    <span class="progress-value"></span>
+                <h6 class="textS">Total</h6>
+                <div class="circulo">
+                    <div class="circular-progress">
+                        <span class="progress-value"></span>
+                    </div>
                 </div>
-            </div>
                 <p class="text"></p>
             </div>
             <div class="containerD">
                 <h6 class="textD" id="resDepre"></h6>
-            <div class="circulo">
-                <div class="circular-progressD">
-                    <span class="progress-valueD"></span>
+                <div class="circulo">
+                    <div class="circular-progressD">
+                        <span class="progress-valueD"></span>
+                    </div>
                 </div>
-            </div>
                 <p class="textD" id="concDepre"></p>
             </div>
             <div class="containerS">
                 <h6 class="textS" id="resStress"></h6>
-            <div class="circulo">
-                <div class="circular-progressS">
-                    <span class="progress-valueS">0%</span>
+                <div class="circulo">
+                    <div class="circular-progressS">
+                        <span class="progress-valueS">0%</span>
+                    </div>
                 </div>
-            </div>
-                    <p class="textS" id="concStress"></p>
+                <p class="textS" id="concStress"></p>
             </div>
             <div class="containerA">
                 <h6 class="textA" id="resAns"></h6>
-            <div class="circulo">
-                <div class="circular-progressA">
-                    <span class="progress-valueA"></span>
+                <div class="circulo">
+                    <div class="circular-progressA">
+                        <span class="progress-valueA"></span>
+                    </div>
                 </div>
-            </div>
-                    <p class="textA" id="concAns"></p>
+                <p class="textA" id="concAns"></p>
             </div>
         </div>
         <div id="restart"></div>
     </div>
-            <div id="footer" class="hidden">
-                <img src="/landingPage/psihelp logo.png" class="logoFooter">
-                <div id="footerTexto">
-                    <div id="colInforma">
-                        <p id="titulo">Informa-te</p>
-                        <a href="/Doenças/doenças.html" id="contacto">Doenças</a>
-                        <a href="#">Como Ajudar?</a>
-                    </div>
-                    <div id="colTestes">
-                        <p id="titulo">Recursos</p>
-                        <a href="/Intersection_zung/intersection.html" id="contacto">Testes</a>
-                    </div>
-                    <div id="colContactos">
-                        <a href="/Contacto/contacto.html" id="titulo" class="contacto">Contactos</a>
-                        <p>psihelpp@psihelp.pt</p>
-                    </div>
-                </div>
+    <div id="footer" class="hidden">
+        <img src="/psihelp logo.png" class="logoFooter">
+        <div id="footerTexto">
+            <div id="colInforma">
+                <p id="titulo">Informa-te</p>
+                <a href="/Doencas/doencas.html" id="contacto">Doenças</a>
+                <a href="#">Como Ajudar?</a>
             </div>
-            <label for="burger" class="burger">
-                <input id="burger" type="checkbox">
-                <span></span>
-                <span></span>
-                <span></span>
-              </label>
-            <div class="navMobile">
-                <a href="/Intersection_zung/intersection.html" class="mobTestes" >Testes</a>
-                <a href="/Doenças/doenças.html" class="mobSaude" >Doenças</a>
-                <a href="#" class="mobSaude" >Como ajudar ?</a>
+            <div id="colTestes">
+                <p id="titulo">Recursos</p>
+                <a href="/Intersection_zung/intersection.html" id="contacto">Testes</a>
             </div>
+            <div id="colContactos">
+                <a href="/Contacto/contacto.html" id="titulo" class="contacto">Contactos</a>
+                <p>psihelpp@psihelp.pt</p>
+            </div>
+        </div>
+    </div>
+    <label for="burger" class="burger">
+        <input id="burger" type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="navMobile">
+        <a href="/Intersection_zung/intersection.html" class="mobTestes">Testes</a>
+        <a href="/Doencas/doencas.html" class="mobSaude">Doenças</a>
+        <a href="#" class="mobSaude">Como ajudar ?</a>
+    </div>
     <script src="DASS-Y.js"></script>
-    
+
 </body>
 </div>
+
 </html>
