@@ -600,7 +600,7 @@ time, mark, audio, video {
 /*NavBar*/
 .navbarContainer{
   display: grid;
-  grid-template: 70px / 10fr 1fr max-content;
+  grid-template: 70px / auto 10fr 1fr max-content;
   padding-right: 2vw;
   column-gap: 3vw;
   z-index: 1;
