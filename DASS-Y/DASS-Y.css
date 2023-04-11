@@ -93,7 +93,6 @@ button {
   font-size: 4vh;
   text-align: center;
   position: relative;
-  z-index: -1;
 
     
 }
@@ -137,7 +136,6 @@ button {
                   'depre ans stress';
   gap: 25px;
   padding: 20px;
-  z-index: -1;
   margin-top: 3vh;
 
 }
@@ -438,7 +436,6 @@ button {
     place-content: center;
     margin: 0;
     font-size: 1.7vh;
-    z-index: -1;
 }
   #questao{
   margin: 5px;
@@ -462,7 +459,6 @@ button {
   border-bottom-right-radius: 20%;
   border-bottom-left-radius: 5%;
   border-top-right-radius: 5%;
-  z-index: -1;
 }
 #a , #b, #c , #d{
   position: relative;
@@ -604,7 +600,7 @@ time, mark, audio, video {
 /*NavBar*/
 .navbarContainer{
   display: grid;
-  grid-template: 70px / 5fr 1fr max-content;
+  grid-template: 70px / 10fr 1fr max-content;
   padding-right: 2vw;
   column-gap: 3vw;
   z-index: 1;

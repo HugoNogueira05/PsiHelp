@@ -104,7 +104,7 @@ body{
 /*navBar*/
 .navbarContainer{
     display: grid;
-    grid-template: 70px / 5fr 1fr max-content;
+    grid-template: 70px / 10fr 1fr max-content;
     padding-right: 2vw;
     column-gap: 3vw;
   }
@@ -129,6 +129,7 @@ body{
     cursor: default;
     text-decoration: none;
     z-index: 9999;
+    place-self: center;
     
   }
   .testes:hover{
