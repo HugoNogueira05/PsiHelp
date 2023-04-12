@@ -107,46 +107,119 @@ const questionEl = document.getElementById('question')
 const a_text = document.getElementById('a_text')
 const b_text = document.getElementById('b_text')
 const c_text = document.getElementById('c_text')
-const d_text = document.getElementById('d_text')
-const start = document.getElementById("start")
+const d_text = document.getElementById('d_text')//mal
 const submitBtn = document.getElementById('submit')
+let btnA = document.getElementById("a");
+let btnB = document.getElementById("b");
+let btnC = document.getElementById("c");
+let btnD = document.getElementById("d");
 
 let currentQuiz = 0
 let score = 0
 let resultado
-
-quiz.style.visibility = "hidden"
+let respostas = []
 
 
 function loadQuiz() {
-    quiz.style.visibility = "visible"
-    // start.style.visibility = "hidden"
-    start.remove()
     deselectAnswers()
     const currentQuizData = data[currentQuiz]
     questionEl.innerText = currentQuizData.p
     console.log(currentQuizData.isInverted)
 }
-
+loadQuiz()
 function deselectAnswers() {
-    answerEls.forEach(answerEl => answerEl.checked = false)
+    resposta = ""
+    document.querySelector(".card1").style.backgroundColor = "#fff"
+    document.querySelector(".card2").style.backgroundColor = "#fff"
+    document.querySelector(".card3").style.backgroundColor = "#fff"
+    document.querySelector(".card4").style.backgroundColor = "#fff"
 }
-
-function getSelected() {
-    let answer
-    answerEls.forEach(answerEl => {
-        if (answerEl.checked) {
-            answer = answerEl.id
-        }
+function verificar(){
+    if (resposta == "a"){
+        document.querySelector(".card1").style.backgroundColor = "#5DADE2";
+        document.querySelector(".card2").style.backgroundColor = "#fff"
+        document.querySelector(".card3").style.backgroundColor = "#fff"
+        document.querySelector(".card4").style.backgroundColor = "#fff"
+    }
+    else if (resposta == "b"){
+        document.querySelector(".card2").style.backgroundColor = "#5DADE2";
+        document.querySelector(".card1").style.backgroundColor = "#fff"
+        document.querySelector(".card3").style.backgroundColor = "#fff"
+        document.querySelector(".card4").style.backgroundColor = "#fff"
+    }
+    else if (resposta == "c"){
+        document.querySelector(".card3").style.backgroundColor = "#5DADE2";
+        document.querySelector(".card1").style.backgroundColor = "#fff"
+        document.querySelector(".card2").style.backgroundColor = "#fff"
+        document.querySelector(".card4").style.backgroundColor = "#fff"
+    }
+    else if(resposta == "d"){
+        document.querySelector(".card4").style.backgroundColor = "#5DADE2";
+        document.querySelector(".card1").style.backgroundColor = "#fff"
+        document.querySelector(".card2").style.backgroundColor = "#fff"
+        document.querySelector(".card3").style.backgroundColor = "#fff"
+    }
+}
+    btnA.addEventListener("click", () => {
+        resposta = "a"
+        verificar()
     })
-    console.log(answer)
-    return answer
-}
-
-
+    btnB.addEventListener("click", () => {
+        resposta = "b"
+        verificar()
+    })
+    btnC.addEventListener("click", () => {
+        resposta = "c"
+        verificar()
+    })
+    btnD.addEventListener("click", () => {
+        resposta = "d"
+        verificar()
+    })
+    let antesBtn = document.getElementById("antes")
+    antesBtn.addEventListener("click", () => {
+        const currentQuizData = data[currentQuiz]
+        if(currentQuiz > 0) {
+        resposta = ""
+        currentQuiz --
+        if (currentQuizData.id == 3 || currentQuizData.id == 6 || currentQuizData.id == 7 || currentQuizData.id == 12 || currentQuizData.id == 13 || currentQuizData.id == 15 || currentQuizData.id == 17 || currentQuizData.id == 18 || currentQuizData.id == 19){
+            if (respostas[currentQuiz] == "a"){
+                score -= 4
+            }
+            else if (respostas[currentQuiz] == "b"){
+                score -= 3
+            }
+            else if (respostas[currentQuiz] == "c"){
+                score -= 2
+            }
+            else if (respostas[currentQuiz] == "d"){
+                score -= 1
+            }
+        }
+        else{
+            if (respostas[currentQuiz] == "a"){
+                score -= 1
+            }
+            else if (respostas[currentQuiz] == "b"){
+                score -= 2
+            }
+            else if (respostas[currentQuiz] == "c"){
+                score -= 3
+            }
+            else if (respostas[currentQuiz] == "d"){
+                score -= 4
+            }
+        }
+        respostas.pop([currentQuiz])
+        console.log(score)
+        document.getElementById("questao").style.transform = "translateX(50%) scale(0)" 
+        setTimeout(move2, 300)
+        setTimeout(transitionIn, 600)
+        loadQuiz()
+    }})
 
 submitBtn.addEventListener('click', () => {
-    const answer = getSelected()
+    const answer = resposta 
     const currentQuizData = data[currentQuiz]
     if (answer) {
         if (currentQuizData.isInverted == false) {
@@ -170,24 +243,77 @@ submitBtn.addEventListener('click', () => {
                 score += 1
             }
         }
+        if (resposta == "a" || resposta =="b" || resposta == "c" || resposta == "d"){
         currentQuiz++
+        respostas.push(resposta) 
+        console.log(respostas)
+        transitionOut()
+        setTimeout(move, 300)
+        setTimeout(transitionIn, 600)
+
+
+        }
         if (currentQuiz < data.length) {
             loadQuiz()
         } else {
             if (score < 45) {
                 resultado = "Estás no intervalo normal"
             } else if (score < 60) {
-                resultado = "Podes estar levemente deprimido"
-            } else if (score < 70) {
-                resultado = "Estás moderadamente deprimido"
+                resultado = "Podes ter depressão leve a moderada"
+            } else if (score < 75) {
+                resultado = "Podes ter depressão severa"
             } else {
-                resultado = "Estás severamente deprimido"
+                resultado = "Podes ter níveis extremos de depressão"
             }
-            quiz.innerHTML = `
-            <h2>O teu resultado é ${score}/80. ${resultado}</h2>
-            <button onclick="location.reload()">Recomeçar</button>
-            `
+            quiz.innerHTML = `<h5>O teu resultado é ${score}/80. ${resultado}</h5>`
+            const restart = document.getElementById("restart")
+            
+            restart.innerHTML = `<button onclick="location.reload()" class="button-82-pushable" role="button" id="restart2">
+            <span class="button-82-shadow"></span>
+            <span class="button-82-edge"></span>
+            <span class="button-82-front text"> Recomeçar </span></button>`
+            const conclusao = document.querySelector(".conclusao")  
+            conclusao.style.display = "block";
+            let circularProgress = document.querySelector(".circular-progress")
+            let progressValue = document.querySelector(".progress-value")
+            
+            let progressStartValue = 0
+            let speed = 40
+            
+            let progress = setInterval(() => {
+                progressStartValue++
+                
+                progressValue.textContent = `${progressStartValue}/80`;
+            
+                circularProgress.style.background = `conic-gradient(#2f2e31 ${progressStartValue * 4.5}deg, #fff 0deg)`
+                if(progressStartValue == score){
+                    clearInterval(progress);
+                }
+            }, speed)
         }
     }
     console.log(score)
 })
+function transitionOut(){
+    document.getElementById("questao").style.transform = "translateX(-50%) scale(0)"  
+}
+    function transitionIn() {
+        document.getElementById("questao").style.transform = "translateX(0) scale(1)"
+    }
+    function move(){
+        document.getElementById("questao").style.transform = "translateX(50%) scale(0)"
+    }
+    function move2(){
+        document.getElementById("questao").style.transform = "translateX(-50%) scale(0)"
+    }
+    const burger = document.getElementById('burger')
+    burger.addEventListener("click" ,  function()
+    {
+        if(document.querySelector('.navMobile').style.transform == "translateX(0px) scale(1)"){
+        document.querySelector('.navMobile').style.transform = "translateX(100%) scale(0)"
+    }
+        else{
+            document.querySelector('.navMobile').style.display = "inline"
+            document.querySelector('.navMobile').style.transform = "translateX(0) scale(1)"
+        }
+    })

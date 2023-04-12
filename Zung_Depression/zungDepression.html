@@ -2,42 +2,113 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="zungDepression.css">
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 912px)" href="ZungDepMob.css" />
 
 <body>
-    <div id="start">
-        <h1>Escala de autoavaliação de depressão de Zung</h1>
-        <p class="description">Criada pelo psiquiatra William Zung, professor da Duke University, a escala de
-            autoavaliação de depressão
-            de Zung é um questionário usado ​​por terapeutas e médicos para avaliar o nível de depressão dos
-            pacientes.</p>
-        <button id="startBtn" onclick="loadQuiz()">Começar teste</button>
+    <div class="navbarContainer">
+        <a href="/index.html"><img class="logo" src="/psihelp logo.png"></a>
+        <div></div>
+        <div class="navBar" id="navbar">
+            <p href="#" class="testes" id="texto1">Testes</p>
+            <div class="dropdown-menu1">
+                <a href="/DASS-Y/DASS-Y.html">DASS-Y</a>
+                <br>
+                <br>
+                <a href="/Intersection_zung/intersection.html">Escala de Zung</a>
+            </div>
+        </div>
+        <div class="navBar2">
+            <p href="#" class="saude" id="texto2">Saúde Mental</p>
+            <div class="dropdown-menu2">
+                <a href="/Doencas/doencas.html">Doenças</a>
+                <br>
+                <br>
+                <a href="#">Como ajudar ?</a>
+            </div>
+        </div>
     </div>
     <div class="quiz-container" id="quiz">
-        <div class="quiz-header">
+        <h3>Responda conforme se sentiu na última semana:</h3>
+        <div id="questao">
             <h2 id="question">Question Text</h2>
-            <ul>
-                <li>
-                    <input type="radio" name="answer" id="a" class="answer">
-                    <label for="a" id="a_text">Pouco tempo</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="b" class="answer">
-                    <label for="b" id="b_text">Algum tempo</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="c" class="answer">
-                    <label for="c" id="c_text">Boa parte do tempo</label>
-                </li>
-                <li>
-                    <input type="radio" name="answer" id="d" class="answer">
-                    <label for="d" id="d_text">Maioria do tempo</label>
-                </li>
-            </ul>
+            <div id="cards">
+                <div class="card1">
+                    <button id="a" name="answer" class="answer">Pouco tempo</button>
+                </div>
+                <div class="card2">
+                    <button type="button" name="answer" id="b" class="answer">Algum tempo</button>
+                </div>
+                <div class="card3">
+                    <button type="button" name="answer" id="c" class="answer">Boa parte do tempo</button>
+                </div>
+                <div class="card4">
+                    <button type="button" name="answer" id="d" class="answer">Maioria do tempo</button>
+                </div>
+            </div>
         </div>
-        <button id="submit">Próxima pergunta</button>
+            <div class="botoes">
+                <button class="button-82-pushable" role="button1" id="antes">
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        Pergunta anterior
+                    </span>
+                </button>
+                <button class="button-82-pushable" role="button" id="submit">
+                    <span class="button-82-shadow"></span>
+                    <span class="button-82-edge"></span>
+                    <span class="button-82-front text">
+                        Próxima pergunta
+                    </span>
+                </button>
+            </div>
+    </div>
+    <div class="conclusao">
+        <div class="cards">
+            <div class="container">
+                <div class="circulo">
+                    <div class="circular-progress">
+                        <span class="progress-value"></span>
+                    </div>
+                </div>
+                <p class="text"></p>
+            </div>
+        </div>
+        <div id="restart"></div>
+    </div>
+    <div id="footer" class="hidden">
+        <img src="/psihelp logo.png" class="logoFooter">
+            <div id="colInforma">
+                <p id="titulo">Informa-te</p>
+                <a href="/Doencas/doencas.html" id="contacto">Doenças</a>
+                <a href="#">Como Ajudar?</a>
+            </div>
+            <div id="colTestes">
+                <p id="titulo">Recursos</p>
+                <a href="/Intersection_zung/intersection.html" id="contacto">Testes</a>
+            </div>
+            <div id="colContactos">
+                <a href="/Contacto/contacto.html" id="titulo" class="contacto">Contactos</a>
+                <p>equipa@psihelp.pt</p>
+            </div>
+        </div>
+    </div>
+    <label for="burger" class="burger">
+        <input id="burger" type="checkbox">
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
+    <div class="navMobile">
+        <a href="/Intersection_zung/intersection.html" class="mobTestes">Testes</a>
+        <a href="/Doencas/doencas.html" class="mobSaude">Doenças</a>
+        <a href="#" class="mobSaude">Como ajudar ?</a>
     </div>
     <script src="zungDepression.js"></script>
 </body>
