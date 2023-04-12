@@ -67,16 +67,6 @@ button {
     border-bottom-left-radius: 5%;
     border-top-right-radius: 5%;
   }
-  #check1 , #check2 , #check3 , #check4{
-    visibility: visible;
-    height: 2vh;
-    aspect-ratio: 1;
-    scale: 0;
-    transition: 300ms;
-    position: relative;
-    display: inline-flex;
-  }
-
 .resposta{
     cursor: pointer;
     text-align: center;
