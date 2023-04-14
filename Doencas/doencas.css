@@ -51,14 +51,6 @@ body{
     z-index: 9999;
     
 }
-.testes:hover{
-    font-size: 1.5em;
-} 
-
-.testes2:hover{
-    font-size: 1.5em;
-}
-
 .dropdown-menu1{
     visibility: collapse;
     position: absolute;
@@ -125,9 +117,6 @@ a{
     cursor: default;
     text-decoration: none;
     z-index: 9999;
-}
-.saude:hover{
-    font-size: 1.5em;
 }
 .dropdown-menu2{
     visibility: collapse;
@@ -265,6 +254,7 @@ a{
     color: white;
     font-family: 'Nunito', sans-serif;
     top: 8vh;
+    font-weight: 800;
 }
 .conteudo {
     padding: 0px 18px;

@@ -403,14 +403,6 @@ time, mark, audio, video {
   z-index: 9999;
   
 }
-.testes:hover{
-  font-size: 1.5em;
-} 
-
-.testes2:hover{
-  font-size: 1.5em;
-}
-
 .dropdown-menu1{
   visibility: collapse;
   z-index: 1;
@@ -443,9 +435,6 @@ a{
   cursor: default;
   text-decoration: none;
   z-index: 9999;
-}
-.saude:hover{
-  font-size: 1.5em;
 }
 .dropdown-menu2{
   visibility: collapse;

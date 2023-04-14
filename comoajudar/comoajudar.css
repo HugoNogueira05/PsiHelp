@@ -1,0 +1,417 @@
+*::-webkit-scrollbar {
+    display: none;
+  }
+p{
+    font-size: 2vh;
+}
+body{
+    background: #252525;
+    margin: 0;
+}
+.logo{
+    height: 10vh;
+    aspect-ratio: 1;
+    position: absolute;
+    transition: 600ms;
+    -webkit-user-drag: none;
+    top: 1.1vh;
+    left: 2vw;
+    z-index: 1;
+    position: fixed;
+    float: left;
+}
+.logo:hover{
+    height: 15vh;
+}
+/*navBar*/
+.navBar{
+    position: fixed;
+    top: 1vh;
+    width: 0.5vw;
+    display: grid;
+    justify-content: flex-end  ;
+    align-items: center;
+    transition: 600ms;
+    padding: 40px 0px; 
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    z-index: 1;
+    left: 89vw;
+
+} 
+.testes{
+    position: absolute;
+    font-size: 1,2vh;
+    transition: 600ms;
+    color: #fff;
+    padding: 15px;
+    cursor: default;
+    text-decoration: none;
+    z-index: 9999;
+    
+}
+.dropdown-menu1{
+    visibility: collapse;
+    position: absolute;
+    min-width: 158px;
+    z-index: 1;
+    transition: 300ms;
+    scale: 0;
+    left: -2vw;
+    top: 3vh;
+}
+.navBar:hover .dropdown-menu1{
+    visibility: visible;
+    position: absolute;
+    transform: translate(3vw , 7vh);
+    scale: 1;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.burger,.mobTestes,.mobSaude,.mobSaude2{
+    display: none;
+}
+@media screen and (min-width: 1080px){
+    .navBar2{
+        position: fixed;
+        top: 1vh;
+        width: 6vw;
+        display: grid;
+        justify-content: flex-end  ;
+        align-items: center;
+        transition: 600ms;
+        padding: 40px 0px;
+        font-size: 2vh;
+        font-family: 'Nunito', sans-serif;
+        font-weight: bold; 
+        z-index: 1;
+        left: 74vw;
+    } 
+}
+@media screen and (min-width: 800px){
+
+.navBar2{
+    position: fixed;
+    top: 1vh;
+    width: 14vw;
+    display: grid;
+    justify-content: flex-end  ;
+    align-items: center;
+    transition: 600ms;
+    padding: 40px 0px;
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold; 
+    z-index: 1;
+    left: 74vw;
+} }
+.saude{
+    position: absolute;
+    font-size: 2vh;
+    transition: 600ms;
+    color: #fff;
+    padding: 15px;
+    cursor: default;
+    text-decoration: none;
+    z-index: 9999;
+}
+.dropdown-menu2{
+    visibility: collapse;
+    position: absolute;
+    min-width: 158px;
+    z-index: 1;
+    transition: 300ms;
+    scale: 0;
+    left: -2vw;
+    top: 3vh;
+}
+.navBar2:hover .dropdown-menu2{
+    visibility: visible;
+    position: absolute;
+    transform: translate(3vw , 7vh);
+    scale: 1;
+}
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+#footer{
+  display: grid;
+  grid-template: auto / 10vw auto auto auto;
+  column-gap: 1vw;
+  position: relative;
+  bottom: 0;
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  cursor: default;
+  font-size: 0.85vw;
+}
+.logoFooter{
+  aspect-ratio: 1;
+  border-right: rgb(29, 146, 29) solid 1.5px;
+  max-width: 10vw;
+}
+#titulo{
+  font-weight: bold;
+}
+#colInforma a{
+  display: block;
+  margin-bottom: 2vh;
+}
+#colContactos{
+  margin-top: 1em;
+}
+.navMobile{
+  visibility: collapse;
+  display: none;
+}
+.burger{
+  display: none;
+}
+/*Depressão-texto*/
+#intro{
+    color: #fff;
+    position: relative;
+    top: 10vh;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    margin-left: 2vw;
+}
+#intro > p{
+    margin-left: 1vw;
+    line-height: 1.5;
+}
+#intro > ul{
+    text-decoration: none;
+}
+.titulo > h2{
+    text-align: center;
+    font-weight: normal;
+}
+/*mudanças solha*/
+.doencas_top {
+    width: 100%;
+    overflow: hidden;
+    background-image: url(/comoajudar/fotoAjudar.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    font-family: 'Nunito', sans-serif; 
+    padding: 0;
+    margin: 0;
+}
+
+.title_and_image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.flex_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title_text {
+    width: 100%;
+}
+
+.title_text > h1 {
+    position: relative;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Nunito', sans-serif;
+    top: 12vh;
+    font-weight: 700;
+}
+.conteudo {
+    padding: 0px 18px;
+}
+
+@media only screen and (min-width: 1060px) {
+    .conteudo {
+        padding: 0px 180px;
+    }
+}
+.link_testes {
+    margin-top: 90px;
+    padding: 0px 28px;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    font-size: 2vw;
+}
+
+@media only screen and (min-width: 1060px) {
+    .link_testes {
+        padding: 0px 190px;
+    }
+}
+/*animação*/
+.hidden{
+    opacity: 0;
+    transition: 500ms;
+    transform: translateY(100%);
+}
+.show{
+    opacity: 1;
+    transform: translateY(0);
+}
+/*botão de Teste*/
+.box {
+    width: 14vw;
+    height: auto;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    font-weight: 900;
+    left: 40vw;
+    font-size: 20px;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .box:hover:before {
+    border-color: #818181;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: #818181;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: rgb(120, 145, 253);
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  #texto3{
+    position: relative;
+    top: 2vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    z-index: -1;    
+    padding: 5px;
+}  
+#texto3 > img{
+    width: 30vw;
+    border-radius: 5%;
+    filter: brightness(70%);
+}
+.conselho1{
+    margin-left: 1vw;
+    position: relative;
+    top: -5vh;
+}
+.conselho1 > h6{
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+#texto4{
+    position: relative;
+    top: 0vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    padding: 5px;
+}
+#texto4 > img{
+    width: 20vw;
+    border-radius: 5%;
+    filter: brightness(70%);
+}
+.conselho2 > h6{
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+.conselho2 {
+    margin-right: 1vw;
+    position: relative;
+    top: -5vh;
+}
+#texto5{
+    position: relative;
+    top: 2vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    z-index: -1;    
+    padding: 5px;
+}  
+#texto5 > img{
+    width: 20vw;
+    border-radius: 5%;
+    filter: brightness(70%);
+}
+#imgFinal{
+    position: relative;
+    aspect-ratio: 1;
+    width: 20vw;
+    border-radius: 5%;
+    filter: brightness(70%);
+
+    
+}
+#texto6{
+    position: relative;
+    top: 0vh;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 2vh;
+    font-family: 'Nunito', sans-serif;
+    padding: 5px;
+    margin-bottom: 10vh;
+}
+
+#gapN{
+    padding-left: 10px;
+}
