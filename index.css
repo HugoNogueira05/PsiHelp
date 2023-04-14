@@ -207,6 +207,10 @@ body{
     display: block;
     margin-bottom: 2vh;
 }
+#colTestes a{
+    display: block;
+    margin-bottom: 2vh;
+}
 #colContactos{
     margin-top: 1em;
 }

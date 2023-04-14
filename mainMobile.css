@@ -81,6 +81,17 @@ body{
     margin-right: 5vw;
     top: 5vh;
 }
+.mobPsi{
+font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    position: relative;
+    color: #fff;
+    font-size: 3.6vw;
+    margin-bottom: 5vh;
+    margin-left: 1vw;
+    margin-right: 0;
+    top: 5vh;
+  }
 /*selector*/
 .burger {
     position: fixed;
