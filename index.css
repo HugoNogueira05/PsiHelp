@@ -68,6 +68,9 @@ body{
     z-index: -1;    
     padding: 5px;
 }  
+#texto3 > img{
+  border-radius: 2%;
+}
 #texto4{
     position: relative;
     top: 113vh;
@@ -78,6 +81,10 @@ body{
     font-weight: bold;
     font-family: 'Nunito', sans-serif;
     padding: 5px;
+}
+#texto4 > img{
+  border-radius: 2%;
+  margin-left: 5px;
 }
 #gapN{
     padding-left: 10px;
