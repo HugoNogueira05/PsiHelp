@@ -166,7 +166,7 @@ button {
   width: 100%;
   display: flex;
   justify-content: center;
-  top: 2%;
+  margin-top: 10%;
 }
 .conclusao{
   display: none;
@@ -276,10 +276,10 @@ button {
   outline: none;
 }
 /* telemovel */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 912px) {
   .quiz-container{
     position: relative;
-    top: 15vw;
+    top: 10vw;
     display: grid;
     grid-template: auto auto/ auto;
     place-content: center;

@@ -258,11 +258,13 @@ a{
 }
 .conteudo {
     padding: 0px 18px;
+    z-index: -1;
 }
 
 @media only screen and (min-width: 1060px) {
     .conteudo {
         padding: 0px 180px;
+        z-index: -1;
     }
 }
 

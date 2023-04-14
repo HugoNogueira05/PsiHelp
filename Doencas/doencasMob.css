@@ -7,7 +7,7 @@
     visibility: visible;
     position: fixed;
     background-color: #616161c0;
-    z-index: 0;
+    z-index: 1;
     width: 40vw;
     height: 100vh;
     right: 0;
@@ -56,7 +56,7 @@
     cursor: pointer;  
     right: 1vh;
     top: 1vh;
-    z-index: 1;
+    z-index: 2;
     display: inline;
   }
   
@@ -69,7 +69,7 @@
     position: absolute;
     height: 4px;
     width: 100%;
-    background: black;
+    background: rgb(255, 255, 255);
     border-radius: 9px;
     opacity: 1;
     left: 0;

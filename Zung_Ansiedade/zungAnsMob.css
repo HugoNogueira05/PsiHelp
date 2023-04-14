@@ -27,7 +27,7 @@
     position: absolute;
     height: 4px;
     width: 100%;
-    background: black;
+    background: rgb(255, 255, 255);
     border-radius: 9px;
     opacity: 1;
     left: 0;
@@ -91,4 +91,11 @@
     margin-left: 5vw;
     margin-right: 5vw;
     top: 10vh;
+}
+.container{
+  border: none;
+  background-color: transparent;
+}
+#restart{
+  margin-top: -10vh;
 }

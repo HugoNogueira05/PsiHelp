@@ -26,6 +26,10 @@ body{
     z-index: -1;
     transform: translateX(-60vw);
 }
+.navbarContainer{
+  position: absolute;
+}
+
 #texto3{
     position: relative;
     top: 10vh;
@@ -99,7 +103,7 @@ body{
     position: absolute;
     height: 4px;
     width: 100%;
-    background: black;
+    background: rgb(255, 255, 255);
     border-radius: 9px;
     opacity: 1;
     left: 0;

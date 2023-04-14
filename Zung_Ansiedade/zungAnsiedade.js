@@ -114,7 +114,7 @@ let btnB = document.getElementById("b");
 let btnC = document.getElementById("c");
 let btnD = document.getElementById("d");
 
-let currentQuiz = 0
+let currentQuiz = 19
 let score = 0
 let resultado
 let respostas = []

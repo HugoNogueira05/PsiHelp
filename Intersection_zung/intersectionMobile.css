@@ -52,3 +52,15 @@ h3{
     position: fixed;
     float: left;
 }
+#card1:hover{
+    height: 20vh;
+    width: 35vw;
+}   
+#card2:hover{
+    height: 20vh;
+    width: 35vw;
+}
+#card3:hover{
+    height: 20vh;
+    width: 35vw;
+}
