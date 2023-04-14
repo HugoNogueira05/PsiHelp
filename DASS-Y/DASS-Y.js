@@ -67,40 +67,24 @@ function verificar(){
         document.querySelector(".card2").style.backgroundColor = "#fff"
         document.querySelector(".card3").style.backgroundColor = "#fff"
         document.querySelector(".card4").style.backgroundColor = "#fff"
-        document.getElementById("check1").style.scale = "1"
-        document.getElementById("check2").style.scale = "0"
-        document.getElementById("check3").style.scale = "0"
-        document.getElementById("check4").style.scale = "0"
     }
     else if (resposta == "b"){
         document.querySelector(".card2").style.backgroundColor = "#5DADE2";
         document.querySelector(".card1").style.backgroundColor = "#fff"
         document.querySelector(".card3").style.backgroundColor = "#fff"
         document.querySelector(".card4").style.backgroundColor = "#fff"
-        document.getElementById("check1").style.scale = "0"
-        document.getElementById("check2").style.scale = "1"
-        document.getElementById("check3").style.scale = "0"
-        document.getElementById("check4").style.scale = "0"
     }
     else if (resposta == "c"){
         document.querySelector(".card3").style.backgroundColor = "#5DADE2";
         document.querySelector(".card1").style.backgroundColor = "#fff"
         document.querySelector(".card2").style.backgroundColor = "#fff"
         document.querySelector(".card4").style.backgroundColor = "#fff"
-        document.getElementById("check1").style.scale = "0"
-        document.getElementById("check2").style.scale = "0"
-        document.getElementById("check3").style.scale = "1"
-        document.getElementById("check4").style.scale = "0"
     }
     else if(resposta == "d"){
         document.querySelector(".card4").style.backgroundColor = "#5DADE2";
         document.querySelector(".card1").style.backgroundColor = "#fff"
         document.querySelector(".card2").style.backgroundColor = "#fff"
         document.querySelector(".card3").style.backgroundColor = "#fff"
-        document.getElementById("check1").style.scale = "0"
-        document.getElementById("check2").style.scale = "0"
-        document.getElementById("check3").style.scale = "0"
-        document.getElementById("check4").style.scale = "1"
     }
     }
     btnA.addEventListener("click", () => {
@@ -123,10 +107,6 @@ function verificar(){
     let antesBtn = document.getElementById("antes")
     antesBtn.addEventListener("click", () => {
         if(perguntaAtual > 0) {
-        document.getElementById("check1").style.scale = "0"
-        document.getElementById("check2").style.scale = "0"
-        document.getElementById("check3").style.scale = "0"
-        document.getElementById("check4").style.scale = "0"
         valor.pop()
         resposta = ""
         perguntaAtual --
@@ -138,10 +118,6 @@ function verificar(){
 
 
  nextBtn.addEventListener("click", () => {
-    document.getElementById("check1").style.scale = "0"
-    document.getElementById("check2").style.scale = "0"
-    document.getElementById("check3").style.scale = "0"
-    document.getElementById("check4").style.scale = "0"
     if (resposta == "a"){
         valor.push(0);
     }
