@@ -13,25 +13,6 @@
 <body>
     <div class="navbarContainer">
         <a href="/index.html"><img class="logo" src="/psihelp logo.png"></a>
-        <div></div>
-        <div class="navBar" id="navbar">
-            <p href="#" class="testes" id="texto1">Testes</p>
-            <div class="dropdown-menu1">
-                <a href="/DASS-Y/DASS-Y.html">DASS-Y</a>
-                <br>
-                <br>
-                <a href="/Intersection_zung/intersection.html">Escala de Zung</a>
-            </div>
-        </div>
-        <div class="navBar2">
-            <p href="#" class="saude" id="texto2">Saúde Mental</p>
-            <div class="dropdown-menu2">
-                <a href="/Doencas/doencas.html">Doenças</a>
-                <br>
-                <br>
-                <a href="/comoajudar/comoajudar.html">Como ajudar ?</a>
-            </div>
-        </div>
     </div>
     <div class="quiz-container" id="quiz">
         <h3>Responda conforme se sentiu na última semana:</h3>
@@ -82,22 +63,27 @@
         </div>
         <div id="restart"></div>
     </div>
-    <div id="footer" class="hidden">
+    <div id="footer">
         <img src="/psihelp logo.png" class="logoFooter">
-            <div id="colInforma">
-                <p id="titulo">Informa-te</p>
-                <a href="/Doencas/doencas.html" id="contacto">Doenças</a>
-                <a href="/comoajudar/comoajudar.html">Como Ajudar?</a>
-            </div>
-            <div id="colTestes">
-                <p id="titulo">Recursos</p>
-                <a href="/Intersection_zung/intersection.html" id="contacto">Testes</a>
-            </div>
-            <div id="colContactos">
-                <a href="/Contacto/contacto.html" id="titulo" class="contacto">Contactos</a>
-                <p>equipa@psihelp.pt</p>
-            </div>
+        <div id="colInforma">
+          <span id="titulo" class="tituloFooter">Informa-te</span>
+          <a href="/index.html" id="contacto">Home</a>
+          <a href="/Doencas/doencas.html" id="contacto">Doenças</a>
+          <a href="/comoajudar/comoajudar.html">Como ajudar ?</a>
         </div>
+        <div id="colInforma">
+          <span id="titulo" class="tituloFooter">Recursos</span>
+          <a href="/Intersection_zung/intersection.html" id="contacto">Realiza um Teste</a>
+          <a href="/backoffice/listagem.php" id="contacto">Encontrar um profissional</a>
+          <a href="/backoffice/formulario.php" id="contacto">Registar-se como profissional</a>
+        </div>
+        <div id="colInforma">
+          <span id="titulo" class="tituloFooter">Contactos</span>
+          <a href="/Contacto/contacto.html">Formulário de Contacto</a>
+          <a href="mailto:equipa@psihelp.pt?subject=[Info] - Contacto site PsiHelp.pt">Email: equipa@psihelp.pt</a>
+          <a href="/testemunhos/testemunhos.html">Testemunhos</a>
+        </div>
+      </div>
     </div>
     <label for="burger" class="burger">
         <input id="burger" type="checkbox">
@@ -109,6 +95,9 @@
         <a href="/Intersection_zung/intersection.html" class="mobTestes">Testes</a>
         <a href="/Doencas/doencas.html" class="mobSaude">Doenças</a>
         <a href="/comoajudar/comoajudar.html" class="mobSaude">Como ajudar ?</a>
+        <a href="/backoffice/listagem.php" class="mobPsi">Encontrar um profissional</a>
+        <a href="/backoffice/formulario.php" class="mobPsi2">Registar-se como profissional</a>
+    </div>
     </div>
     <script src="zungDepression.js"></script>
 </body>

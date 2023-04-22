@@ -30,14 +30,14 @@
     height: 100vh;
     width: 100vw;
     background-color: #171717;
-    font-size: 2vh; 
+    font-size: 2vh;
     z-index: -1;
     margin-bottom: 0;
     padding-bottom: 0;
 }
 #cards{
-  position: relative; 
-  top: 5vh;  
+  position: relative;
+  top: 5vh;
   display: grid;
   grid-template: auto auto auto auto / max-content;
   place-content: center;
@@ -52,14 +52,14 @@ button {
     margin: .1em;
     z-index: 2;
     position: relative;
-    
+
   }
   .card1 , .card2 , .card3, .card4{
     width: max-content;
     margin: auto;
     transition: 300ms ease-in;
     background-color: white;
-    z-index: 1;
+
     top: 2px;
     padding: 2px;
     border-top-left-radius: 20%;
@@ -84,7 +84,6 @@ button {
   text-align: center;
   position: relative;
 
-    
 }
  #questao{
     margin: 5px;
@@ -94,10 +93,10 @@ button {
     border-radius: 5%;
     font-size: 3vh;
     top: 10px;
-    text-align: center;  
+    text-align: center;
     height: fit-content;
     font-weight: bold;
-    
+
 }
   #a , #b, #c , #d{
     position: relative;
@@ -107,7 +106,7 @@ button {
 .logo:hover{
     height: 15vh;
 }
-/*conclusão circulos*/
+/*conclus達o circulos*/
 .container{
   grid-area: header;
  }
@@ -195,7 +194,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-
 
 }
 .circular-progressD::before{
@@ -312,7 +310,7 @@ button {
 .conclusao{
   display: none;
 }
-/* botão */
+/* bot達o */
 .button-82-pushable {
   position: relative;
   border: none;
@@ -437,7 +435,7 @@ button {
   max-height: 38vh;
   width: 60vw;
 }
-/*conclusão circulos*/
+/*conclus達o circulos*/
 .card1 , .card2 , .card3, .card4{
   width: 40vw;
   margin: auto;
@@ -461,7 +459,7 @@ button {
   font-weight: bold;
   color: rgb(255, 255, 255);
   text-align: center ;
-  
+
 }
 .circular-progressA{
   position: relative;
@@ -574,8 +572,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -588,13 +586,12 @@ time, mark, audio, video {
   font-weight: bold;
 }
 /*NavBar*/
+/*navBar*/
 .navbarContainer{
   display: grid;
-  grid-template: 70px / auto 10fr 1fr max-content;
+  grid-template: 70px / 9fr 3fr 3fr max-content;
   padding-right: 2vw;
   column-gap: 3vw;
-  z-index: 1;
-  margin-bottom: 3vh;
 }
 .logo{
   height: 10vh;
@@ -605,49 +602,48 @@ time, mark, audio, video {
 }
 .navBar{
   transition: 600ms;
-  font-size: 2vh;
+  font-size: 30px;
   font-family: 'Nunito', sans-serif;
   font-weight: bold;
   z-index: 0;
-  padding-top: 2vh;
-
-} 
+}
 .testes{
-  font-size: 2vh;
   transition: 600ms;
   color: #fff;
   cursor: default;
   text-decoration: none;
   z-index: 9999;
-  
+  place-self: center;
+
 }
 .dropdown-menu1{
   visibility: collapse;
   z-index: 1;
   transition: 300ms;
   scale: 0;
+  margin-top: -20px;
+  background-color: gray;
+  height: 150px;
+  opacity: 0.8;
+  font-size: 20px;
 }
 .navBar:hover .dropdown-menu1{
   visibility: visible;
   position: absolute;
   scale: 1;
 }
-a{
-  text-decoration: none;
-  color: #fff;
-}
+
 @media screen and (min-width: 800px){
 
 .navBar2{
   transition: 600ms;
-  font-size: 2vh;
+  font-size: 30px;
   font-family: 'Nunito', sans-serif;
-  font-weight: bold; 
+  font-weight: bold;
   z-index: 0;
-  padding-top: 2vh;
-} } 
+} }
 .saude{
-  font-size: 1,2vh;
+
   transition: 600ms;
   color: #fff;
   cursor: default;
@@ -659,11 +655,42 @@ a{
   z-index: 1;
   transition: 300ms;
   scale: 0;
+  margin-top: -20px;
+  background-color: gray;
+  height: 300px;
+  opacity: 0.8;
+  font-size: 20px;
 }
 .navBar2:hover .dropdown-menu2{
   visibility: visible;
   position: absolute;
   scale: 1;
+}
+
+.submenu{
+top: 20px ;
+margin-top: 10px;
+position: relative;
+color: white;
+padding: 10px;
+opacity: 1;
+}
+
+.submenu:hover{
+background-color: #464646;
+cursor: pointer;
+opacity: 1;
+
+}
+
+.navMobile{
+visibility: collapse;
+display: none;
+}
+
+a{
+  text-decoration: none;
+  color: #fff;
 }
 /*footer*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');

@@ -6,12 +6,17 @@ body{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    display: flex;
+
     justify-content: center;
-    text-align: center ;
     color: white;
     font-family: 'Nunito', sans-serif;
     cursor: default;
+}
+
+h1{
+    top: 100px;
+    left: 400px;
+    position: relative;
 }
 .card{
     height: 40vh;
@@ -24,15 +29,18 @@ body{
 
 }
 #cards{
+    top: 200px;
+    left: 200px;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    position: relative;
 }
 #card1:hover{
     height: 56vh;
     width: 32.2vw;
     font-size: 1.4em;
-}   
+}
 #card2:hover{
     height: 56vh;
     width: 32.2vw;
@@ -109,3 +117,38 @@ h3{
     font-size: 2em;
 }
 
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+#footer{
+  display: grid;
+  grid-template: auto / 10vw auto auto auto;
+  column-gap: 1vw;
+  position: relative;
+  bottom: -20vh;
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  cursor: default;
+  font-size: 0.85vw;
+}
+.logoFooter{
+  aspect-ratio: 1;
+  border-right: rgb(29, 146, 29) solid 1.5px;
+  max-width: 10vw;
+}
+#titulo{
+  font-weight: bold;
+}
+#colInforma a{
+  display: block;
+  margin-bottom: 2vh;
+  font-weight: normal;
+}
+#colContactos{
+  margin-top: 1em;
+}
+#colContactos p{
+  font-weight: normal;
+}
+#colTestes a{
+  font-weight: normal;
+}

@@ -1,44 +1,76 @@
-#cards{
-    display: table-column;
-    margin-top: 12vh;
-    aspect-ratio: 1;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+body{
+    align-items: center;
+    background-color: #171717;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    justify-content: center;
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    cursor: default;
+}
+
+h1{
+    top: 100px;
+    left: 400px;
+    position: relative;
 }
 .card{
-    margin-top: 5vh;
-    height: 20vh;
-    width: 35vw;
+    height: 40vh;
+    width: 23vw;
     background-image: linear-gradient(to bottom right, #424242 , #131010);
     border-radius: 10%;
     cursor:pointer;
     border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 300ms;
+
 }
-h1{
-    margin-left: 5px;
-    margin-right: 5px;
-    position: absolute;
-    top: 7vh;
-    font-size: 1.6em;
+.mobTitulo{
+    left: 90px;
+    top: 150px;
 }
-h3{
-    place-content: center;
-    place-items: center;
-    height: 20vh;
-    width: 35vw;
-    margin: auto;
+#cards{
+    top: 200px;
+    left: 50px;
     display: flex;
-    font-size: 1.4em;
+    flex-wrap: wrap;
+    gap: 10px;
+    position: relative;
 }
-#t{
-    display: none;
+#card1:hover{
+    height: 56vh;
+    width: 32.2vw;
+    font-size: 1em;
+}
+#card2:hover{
+    height: 56vh;
+    width: 32.2vw;
+    font-size: 1em;
+}
+#card3:hover{
+    height: 56vh;
+    width: 32.2vw;
+    font-size: 1em;
 }
 #card1:hover > .t1{
-    display: none;
+    visibility: visible;
 }
 #card2:hover > .t2{
-    display: none;
+    visibility: visible;
 }
 #card3:hover > .t3{
-    display: none;
+    visibility: visible;
+}
+#t{
+    position: relative;
+    visibility: collapse;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
 }
 .logo{
     height: 10vh;
@@ -46,21 +78,50 @@ h3{
     position: absolute;
     transition: 600ms;
     -webkit-user-drag: none;
-    top: 0vh;
+    top: 1.1vh;
     left: 2vw;
     z-index: 1;
     position: fixed;
     float: left;
 }
-#card1:hover{
-    height: 20vh;
-    width: 35vw;
-}   
-#card2:hover{
-    height: 20vh;
-    width: 35vw;
+.logo:hover{
+    height: 15vh;
 }
-#card3:hover{
-    height: 20vh;
-    width: 35vw;
+a{
+    text-decoration: none;
+    color: #fff;
 }
+#card1:hover > h3{
+    font-size: 1.4em;
+    position: relative;
+    height: 10vh;
+
+}
+#card2:hover > h3{
+    font-size: 1.4em;
+    position: relative;
+    height: 10vh;
+}
+#card3:hover > h3{
+    font-size: 1.4em;
+    position: relative;
+    height: 10vh;
+}
+h1{
+    position: absolute;
+    top: 5vh;
+    font-size: 1.2em;
+}
+h3{
+    place-content: center;
+    place-items: center;
+    height: 40vh;
+    width: 23vw;
+    margin: auto;
+    display: flex;
+    font-size: 1em;
+}
+/*Footer*/
+#footer{
+    display: none;
+  }

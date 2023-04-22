@@ -5,33 +5,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 800px)" href="mainMobile.css" />
+    <title>Psihelp</title>
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/geral.css">
+    <link rel="stylesheet" type="text/css" media="only screen and (max-device-width: 800px)" href="mainMobile.css?2" />
 </head>
 
 <body>
     <div class="navbarContainer">
-    <img src="./psihelp logo.png" class="logo">
-    <div class="navBar" id="navbar">
-        <p class="testes" id="texto1">Testes</p>
-        <div class="dropdown-menu1">
-            <a href="/DASS-Y/DASS-Y.html">DASS-Y</a>
-            <br>
-            <br>
-            <a href="/Intersection_zung/intersection.html">Escala de Zung</a>
+        <img src="./psihelp logo.png" class="logo">
+        <div class="navBar" id="navbar">
+            <p class="testes" id="texto1">Realiza um Teste</p>
+            <div class="dropdown-menu1">
+                <div class="submenu" onclick="window.location.href='/DASS-Y/DASS-Y.html'">DASS-Y</div>
+                <div class="submenu" onclick="window.location.href='/Intersection_zung/intersection.html'">Escala de Zung</div>
+            </div>
+        </div>
+        <div class=" navBar2">
+            <p class="saude" id="texto2">Saúde Mental</p>
+            <div class="dropdown-menu2">
+                <div class="submenu" onclick="window.location.href='/Doencas/doencas.html'">Doenças</div>
+                <div class=" submenu"><a href="/comoajudar/comoajudar.html">Como ajudar ?</a></div>
+                <div class="submenu"><a href="/backoffice/listagem.php">Encontrar um profissional</a></div>
+                <div class="submenu"><a href="/backoffice/formulario.php">Registar-se como profissional</a></div>
+            </div>
         </div>
     </div>
-    <div class="navBar2">
-        <p class="saude" id="texto2">Saúde Mental</p>
-        <div class="dropdown-menu2">
-            <a href="/Doencas/doencas.html">Doenças</a>
-            <br>
-            <br>
-            <a href="/comoajudar/comoajudar.html">Como ajudar ?</a>
-        </div>
-    </div>
-</div>
     <section class="banner">
         <p id="dado">Depressão afeta 42% dos jovens portugueses<br>-<br>Público</p>
     </section>
@@ -40,32 +39,37 @@
     </div>
     <div id="texto3" class="hidden">
         <img src="/imagem1.jpg" class="img">
-        <p id="gapN">Com este site pretendemos combater os problemas de saúde mental em Portugal, principalmente nos jovens, sensibilizando para este problema tão recorrente na nossa sociedade.
+        <p id="gapN">Com este site pretendemos combater os problemas de saúde mental em Portugal, principalmente nos jovens, sensibilizando para este problema tão recorrente na nossa
+            sociedade.
         </p>
     </div>
     <div id="texto4" class="hidden">
         <p>Aqui podes encontrar testes feitos por profissionais bem como informações sobre as principais doenças.<br>
-           Conheces alguém com algum destes problemas e não sabes como ajudar? Tens aqui algumas dicas úteis e acesso a psicólogos profissionais!
+            Conheces alguém com algum destes problemas e não sabes como ajudar? Tens aqui algumas dicas úteis e acesso a psicólogos profissionais!
         </p>
         <img src="/imagem2.jpg" class="img">
     </div>
     <div id="footer">
-        <img src="  psihelp logo.png" class="logoFooter">
-            <div id="colInforma">
-                <p id="titulo">Informa-te</p>
-                <a href="/Doencas/doencas.html" id="contacto">Doenças</a>
-                <a href="/comoajudar/comoajudar.html">Como ajudar ?</a>
-            </div>
-            <div id="colTestes">
-                <p id="titulo">Recursos</p>
-                <a href="/Intersection_zung/intersection.html" id="contacto">Testes</a>
-                <a href="#" id="contacto">Encontrar um psicólogo</a>
-            </div>
-            <div id="colContactos">
-                <a href="/Contacto/contacto.html" id="titulo" class="contacto">Contactos</a>
-                <p>equipa@psihelp.pt</p>
-            </div>
+        <img src="/psihelp logo.png" class="logoFooter">
+        <div id="colInforma">
+            <span id="titulo" class="tituloFooter">Informa-te</span>
+            <a href="/index.html" id="contacto">Home</a>
+            <a href="/Doencas/doencas.html" id="contacto">Doenças</a>
+            <a href="/comoajudar/comoajudar.html">Como ajudar ?</a>
         </div>
+        <div id="colInforma">
+            <span id="titulo" class="tituloFooter">Recursos</span>
+            <a href="/Intersection_zung/intersection.html" id="contacto">Realiza um Teste</a>
+            <a href="/backoffice/listagem.php" id="contacto">Encontrar um profissional</a>
+            <a href="/backoffice/formulario.php" id="contacto">Registar-se como profissional</a>
+        </div>
+        <div id="colInforma">
+            <span id="titulo" class="tituloFooter">Contactos</span>
+            <a href="/Contacto/contacto.html">Formulário de Contacto</a>
+            <a href="mailto:equipa@psihelp.pt?subject=[Info] - Contacto site PsiHelp.pt">Email: equipa@psihelp.pt</a>
+            <a href="/testemunhos/testemunhos.html">Testemunhos</a>
+        </div>
+    </div>
     </div>
     <label for="burger" class="burger">
         <input id="burger" type="checkbox">
@@ -74,10 +78,18 @@
         <span></span>
     </label>
     <div class="navMobile">
-        <a href="/Intersection_zung/intersection.html" class="mobTestes">Testes</a>
-        <a href="/Doencas/doencas.html" class="mobSaude">Doenças</a>
-        <a href="/comoajudar/comoajudar.html" class="mobSaude">Como ajudar ?</a>
-        <a href="#" class="mobPsi">Encontrar um psicólogo</a>
+        <p class="mobTitulo" id="texto1">Realiza um Teste</p>
+        <div class="mobDropdown">
+            <div class="mobTestes" onclick="window.location.href='/DASS-Y/DASS-Y.html'">DASS-Y</div>
+            <div class="mobTestes" onclick="window.location.href='/Intersection_zung/intersection.html'">Escala de Zung</div>
+        </div>
+        <p class="mobTitulo" id="texto2">Saúde Mental</p>
+        <div class="mobDropdown">
+            <div class="mobSaude" onclick="window.location.href='/Doencas/doencas.html'">Doenças</div>
+            <div class="mobSaude"><a href="/comoajudar/comoajudar.html">Como ajudar ?</a></div>
+            <div class="mobSaude"><a href="/backoffice/listagem.php">Encontrar um profissional</a></div>
+            <div class="mobSaude"><a href="/backoffice/formulario.php">Registar-se como profissional</a></div>
+        </div>
     </div>
     <script src="index.js"></script>
 </body>

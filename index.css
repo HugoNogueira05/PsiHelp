@@ -65,9 +65,9 @@ body{
     font-size: 2vh;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
-    z-index: -1;    
+    z-index: -1;
     padding: 5px;
-}  
+}
 #texto3 > img{
   border-radius: 2%;
 }
@@ -97,7 +97,7 @@ body{
 .show2{
     background-color: transparent;
     width: 0vw;
-    
+
 }
 .hidden{
     opacity: 0;
@@ -111,7 +111,7 @@ body{
 /*navBar*/
 .navbarContainer{
     display: grid;
-    grid-template: 70px / 10fr 1fr max-content;
+    grid-template: 70px / 9fr 3fr 3fr max-content;
     padding-right: 2vw;
     column-gap: 3vw;
   }
@@ -124,47 +124,48 @@ body{
   }
   .navBar{
     transition: 600ms;
-    font-size: 2vh;
+    font-size: 30px;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     z-index: 0;
-  } 
+  }
   .testes{
-    font-size: 2vh;
     transition: 600ms;
     color: #fff;
     cursor: default;
     text-decoration: none;
     z-index: 9999;
     place-self: center;
-    
+
   }
   .dropdown-menu1{
     visibility: collapse;
     z-index: 1;
     transition: 300ms;
     scale: 0;
+    margin-top: -30px;
+    background-color: transparent;
+    height: 150px;
+    opacity: 0.8;
+    font-size: 20px;
   }
   .navBar:hover .dropdown-menu1{
     visibility: visible;
     position: absolute;
     scale: 1;
   }
-  a{
-    text-decoration: none;
-    color: #fff;
-  }
+
   @media screen and (min-width: 800px){
-  
+
   .navBar2{
     transition: 600ms;
-    font-size: 2vh;
+    font-size: 30px;
     font-family: 'Nunito', sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
     z-index: 0;
-  } } 
+  } }
   .saude{
-    font-size: 1,2vh;
+
     transition: 600ms;
     color: #fff;
     cursor: default;
@@ -176,12 +177,39 @@ body{
     z-index: 1;
     transition: 300ms;
     scale: 0;
+    margin-top: -30px;
+    background-color: transparent;
+    height: 300px;
+    opacity: 0.8;
+    font-size: 20px;
   }
   .navBar2:hover .dropdown-menu2{
     visibility: visible;
     position: absolute;
     scale: 1;
   }
+
+.submenu{
+  top: 20px ;
+  margin-top: 10px;
+  position: relative;
+  color: white;
+  padding: 10px;
+  opacity: 1;
+}
+
+.submenu:hover{
+  background-color: transparent;
+  cursor: pointer;
+  opacity: 1;
+
+}
+
+.navMobile{
+  visibility: collapse;
+  display: none;
+}
+
 /*footer*/
   @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
   #footer{
@@ -207,17 +235,19 @@ body{
     display: block;
     margin-bottom: 2vh;
 }
-#colTestes a{
-    display: block;
-    margin-bottom: 2vh;
-}
 #colContactos{
     margin-top: 1em;
 }
 .navMobile{
-    visibility: collapse;
-    display: none;
+  visibility: collapse;
+  display: none;
 }
+
+a{
+  text-decoration: none;
+  color: #fff;
+}
+
 .burger{
     display: none;
 }

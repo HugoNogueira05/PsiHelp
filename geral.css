@@ -1,0 +1,25 @@
+
+
+/*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
+.logoFooter{
+  aspect-ratio: 1;
+  border-right: rgb(29, 146, 29) solid 1.5px;
+  max-width: 10vw;
+}
+
+.tituloFooter{
+  font-size: 18px;
+  font-weight: bold;
+  position: relative;
+}
+
+#colInforma a{
+  margin-top: 30px;
+  display: block;
+  margin-bottom: 2vh;
+}
+#colContactos{
+  margin-top: 1em;
+}

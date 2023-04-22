@@ -1,171 +1,197 @@
 #dado{
-    font-size: 4vw;
-    margin:auto;
-    top: 40vh;
-    left: 70vw;
+  font-size: 4vw;
+  margin:auto;
+  top: 40vh;
+  left: 70vw;
 }
 body{
-    font-size: 100px;
-    display: block;
-    margin: 0;
-    padding-bottom: 0;
-    overflow-x: hidden;
-    max-height: 150vh;
+  font-size: 100px;
+  display: block;
+  margin: 0;
+  padding-bottom: 0;
+  overflow-x: hidden;
+  max-height: 150vh;
 }
 .navBar , .dropdown-menu1 , .navBar2 , .saude{
-    display: none;
+  display: none;
 }
 .banner{
-    position: relative;
-    width: 160vw;
-    height: 78vh;
-    aspect-ratio: 1.777777778;
-    background-image: url(./psihelp-bg.png);
-    background-size: cover;
-    background-position-x: center;
-    z-index: -1;
-    transform: translateX(-60vw);
+  position: relative;
+  width: 160vw;
+  height: 78vh;
+  aspect-ratio: 1.777777778;
+  background-image: url(./psihelp-bg.png);
+  background-size: cover;
+  background-position-x: center;
+  z-index: -1;
+  transform: translateX(-60vw);
 }
 .navbarContainer{
-  position: absolute;
+position: absolute;
 }
 
 #texto3{
-    position: relative;
-    top: 10vh;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-size: 2vh;
-    column-gap: 10px;
-    font-weight: bold;
-    padding: 8px;
+  position: relative;
+  top: 10vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2vh;
+  column-gap: 10px;
+  font-weight: bold;
+  padding: 8px;
 }
 #texto4{
-    position: relative;
-    top: 13vh;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    font-size: 2vh;
-    column-gap: 10px;
-    font-weight: bold;
-    padding: 8px;
-    padding-bottom: 0;
-    margin-bottom: 0;
+  position: relative;
+  top: 13vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 2vh;
+  column-gap: 10px;
+  font-weight: bold;
+  padding: 8px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .img{
-    max-width: 50vw;
+  max-width: 50vw;
 }
-/*NavBar*/
-.navMobile{
-    display: none;
-    visibility: visible;
-    position: fixed;
-    background-color: #616161c0;
-    z-index: 0;
-    width: 40vw;
-    height: 100vh;
-    right: 0;
-    top: 0;
-    transition: 0.3s cubic-bezier(.84,.48,.11,.78);
-}
-.mobTestes, .mobSaude{
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    position: relative;
-    color: #fff;
-    font-size: 4vw;
-    margin-bottom: 5vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
-    top: 5vh;
-}
-.mobPsi{
-font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    position: relative;
-    color: #fff;
-    font-size: 3.6vw;
-    margin-bottom: 5vh;
-    margin-left: 1vw;
-    margin-right: 0;
-    top: 5vh;
-  }
+
 /*selector*/
 .burger {
-    position: fixed;
-    width: 40px;
-    height: 30px;
-    background: transparent;
-    cursor: pointer;  
-    right: 1vh;
-    top: 1vh;
-    z-index: 1;
-    display: inline;
-  }
-  
-  .burger input {
-    display: none;
-  }
-  
-  .burger span {
-    display: block;
-    position: absolute;
-    height: 4px;
-    width: 100%;
-    background: rgb(255, 255, 255);
-    border-radius: 9px;
-    opacity: 1;
-    left: 0;
-    transform: rotate(0deg);
-    transition: .25s ease-in-out;
-  }
-  
-  .burger span:nth-of-type(1) {
-    top: 0px;
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(2) {
-    top: 50%;
-    transform: translateY(-50%);
-    transform-origin: left center;
-  }
-  
-  .burger span:nth-of-type(3) {
-    top: 100%;
-    transform-origin: left center;
-    transform: translateY(-100%);
-  }
-  
-  .burger input:checked ~ span:nth-of-type(1) {
-    transform: rotate(45deg);
-    top: 0px;
-    left: 5px;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(2) {
-    width: 0%;
-    opacity: 0;
-  }
-  
-  .burger input:checked ~ span:nth-of-type(3) {
-    transform: rotate(-45deg);
-    top: 28px;
-    left: 5px;
-  }
+  position: fixed;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+  right: 1vh;
+  top: 1vh;
+  z-index: 1;
+  display: inline;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: rgb(255, 255, 255);
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
 /*Texto em baixo*/
 #projeto{
-    top: -20vh;
-    font-size: 3vw;
-    transition: 0ms;
-    width: 25vw;
+  top: -20vh;
+  font-size: 3vw;
+  transition: 0ms;
+  width: 25vw;
 }
 #projeto-container{
-    transition: 0ms;
+  transition: 0ms;
 }
 /*Footer*/
 #footer{
-  display: none;
+display: none;
 }
+
+/*NavBar*/
+.navMobile{
+display: none;
+visibility: visible;
+position: fixed;
+background-color: #616161c0;
+z-index: 20;
+width: 50vw;
+height: 100vh;
+right: 0;
+top: 0;
+transition: 0.3s cubic-bezier(.84,.48,.11,.78);
+opacity: 1;
+}
+.mobTitulo{
+font-family: 'Nunito', sans-serif;
+font-weight: bold;
+position: relative;
+color: #fff;
+font-size: 20px;
+margin-bottom: 2vh;
+margin-left: 4vw;
+top: 5vh;
+}
+.mobTestes, .mobSaude{
+font-family: 'Nunito', sans-serif;
+font-weight: bold;
+position: relative;
+color: #fff;
+font-size: 16px;
+margin-bottom: 1vh;
+margin-left: 8vw;
+
+top: 5vh;
+cursor: pointer;
+
+}
+.mobPsi{
+font-family: 'Nunito', sans-serif;
+font-weight: bold;
+position: relative;
+color: #fff;
+font-size: 2.5vw;
+margin-bottom: 5vh;
+margin-left: 1vw;
+margin-right: 0;
+top: 5vh;
+}
+.mobPsi2{
+font-family: 'Nunito', sans-serif;
+font-weight: bold;
+position: relative;
+color: #fff;
+font-size: 2.7vw;
+margin-bottom: 5vh;
+margin-left: 1vw;
+margin-right: 0;
+top: 5vh;
+  }

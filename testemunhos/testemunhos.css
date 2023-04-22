@@ -1,0 +1,118 @@
+body{
+    background-color: #171717;
+}
+.logo{
+    height: 10vh;
+    aspect-ratio: 1;
+    transition: 600ms;
+    -webkit-user-drag: none;
+    z-index: 1;
+  }
+.logo:hover{
+    height: 15vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+.intro{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+/*botão*/
+.box {
+    width: 14vw;
+    height: auto;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    font-weight: 900;
+    left: 0vw;
+    font-size: 20px;
+  }
+  
+  .box:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(100%);
+  }
+  
+  .box:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    transform: translateX(-100%);
+  }
+  
+  .box:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  .box:hover:before {
+    border-color: #818181;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .3s;
+  }
+  
+  .box:hover:after {
+    border-color: #818181;
+    height: 100%;
+    transform: translateX(0);
+    transition: .3s transform linear, .3s height linear .5s;
+  }
+  
+  button {
+    color: rgb(120, 145, 253);
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+  }
+  .testemunho-container{
+    background-color: rgb(180, 180, 180);
+    border: rgb(49, 49, 49) solid;
+    border-radius: 5%;
+    margin: 45px;
+    padding: 10px;
+  }
+  .texto{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    text-align: center;
+  }
+  .titulo{
+    font-weight: bold;
+    font-size: large;
+  }
+  /*footer*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+#footer_local {
+  display: grid;
+  grid-template: auto / 10vw auto auto auto;
+  column-gap: 1vw;
+  position: relative;
+  top: 3vh;
+  font-family: 'Rubik', sans-serif;
+  color: #fff;
+  cursor: default;
+  font-size: 0.85vw;
+}

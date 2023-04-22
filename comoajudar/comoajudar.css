@@ -1,9 +1,17 @@
 *::-webkit-scrollbar {
     display: none;
   }
+
 p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    line-height: 1.5;
     font-size: 2vh;
 }
+
 body{
     background: #252525;
     margin: 0;
@@ -32,14 +40,14 @@ body{
     justify-content: flex-end  ;
     align-items: center;
     transition: 600ms;
-    padding: 40px 0px; 
+    padding: 40px 0px;
     font-size: 2vh;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     z-index: 1;
     left: 89vw;
 
-} 
+}
 .testes{
     position: absolute;
     font-size: 1,2vh;
@@ -49,7 +57,7 @@ body{
     cursor: default;
     text-decoration: none;
     z-index: 9999;
-    
+
 }
 .dropdown-menu1{
     visibility: collapse;
@@ -86,10 +94,10 @@ a{
         padding: 40px 0px;
         font-size: 2vh;
         font-family: 'Nunito', sans-serif;
-        font-weight: bold; 
+        font-weight: bold;
         z-index: 1;
         left: 74vw;
-    } 
+    }
 }
 @media screen and (min-width: 800px){
 
@@ -104,7 +112,7 @@ a{
     padding: 40px 0px;
     font-size: 2vh;
     font-family: 'Nunito', sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
     z-index: 1;
     left: 74vw;
 } }
@@ -197,7 +205,7 @@ a{
     background-size: cover;
     background-position: center;
     height: 35vh;
-    font-family: 'Nunito', sans-serif; 
+    font-family: 'Nunito', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -274,7 +282,7 @@ a{
     font-weight: 900;
     font-size: 20px;
   }
-  
+
   .box:before {
     position: absolute;
     content: '';
@@ -287,7 +295,7 @@ a{
     box-sizing: border-box;
     transform: translateX(100%);
   }
-  
+
   .box:after {
     position: absolute;
     content: '';
@@ -300,25 +308,25 @@ a{
     box-sizing: border-box;
     transform: translateX(-100%);
   }
-  
+
   .box:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
-  
+
   .box:hover:before {
     border-color: #818181;
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .3s;
   }
-  
+
   .box:hover:after {
     border-color: #818181;
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .5s;
   }
-  
+
   button {
     color: rgb(120, 145, 253);
     text-decoration: none;
@@ -335,9 +343,9 @@ a{
     color: #fff;
     font-size: 2vh;
     font-family: 'Nunito', sans-serif;
-    z-index: -1;    
+    z-index: -1;
     padding: 5px;
-}  
+}
 #texto3 > img{
     width: 30vw;
     border-radius: 5%;
@@ -384,9 +392,9 @@ a{
     color: #fff;
     font-size: 2vh;
     font-family: 'Nunito', sans-serif;
-    z-index: -1;    
+    z-index: -1;
     padding: 5px;
-}  
+}
 #texto5 > img{
     width: 20vw;
     border-radius: 5%;
@@ -399,7 +407,6 @@ a{
     border-radius: 5%;
     filter: brightness(70%);
 
-    
 }
 #texto6{
     position: relative;

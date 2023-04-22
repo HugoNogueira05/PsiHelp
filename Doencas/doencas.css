@@ -32,14 +32,14 @@ body{
     justify-content: flex-end  ;
     align-items: center;
     transition: 600ms;
-    padding: 40px 0px; 
+    padding: 40px 0px;
     font-size: 2vh;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     z-index: 1;
     left: 89vw;
 
-} 
+}
 .testes{
     position: absolute;
     font-size: 1,2vh;
@@ -49,7 +49,7 @@ body{
     cursor: default;
     text-decoration: none;
     z-index: 9999;
-    
+
 }
 .dropdown-menu1{
     visibility: collapse;
@@ -86,10 +86,10 @@ a{
         padding: 40px 0px;
         font-size: 2vh;
         font-family: 'Nunito', sans-serif;
-        font-weight: bold; 
+        font-weight: bold;
         z-index: 1;
         left: 74vw;
-    } 
+    }
 }
 @media screen and (min-width: 800px){
 
@@ -104,7 +104,7 @@ a{
     padding: 40px 0px;
     font-size: 2vh;
     font-family: 'Nunito', sans-serif;
-    font-weight: bold; 
+    font-weight: bold;
     z-index: 1;
     left: 74vw;
 } }
@@ -134,24 +134,19 @@ a{
     transform: translate(3vw , 7vh);
     scale: 1;
 }
-/*footer*/
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+
 #footer{
   display: grid;
   grid-template: auto / 10vw auto auto auto;
   column-gap: 1vw;
   position: relative;
-  bottom: 0;
+  bottom: -20pv;
   font-family: 'Rubik', sans-serif;
   color: #fff;
   cursor: default;
   font-size: 0.85vw;
 }
-.logoFooter{
-  aspect-ratio: 1;
-  border-right: rgb(29, 146, 29) solid 1.5px;
-  max-width: 10vw;
-}
+
 #titulo{
   font-weight: bold;
 }
@@ -195,7 +190,7 @@ a{
     top: 14vh;
     margin-left: 2vw;
     padding: 10px;
-    font-family: 'Nunito', sans-serif;  
+    font-family: 'Nunito', sans-serif;
 }
 #ansiedade > p{
     margin-left: 1vw;
@@ -211,16 +206,16 @@ a{
     top: 6vh;
     margin-left: 2vw;
     padding: 10px;
-    font-family: 'Nunito', sans-serif;  
+    font-family: 'Nunito', sans-serif;
     margin-top: 70px;
+
 }
-#ansiedade > p{
+#stress > p{
     margin-left: 1vw;
     line-height: 1.5;
 }
 
-
-/*mudanças solha*/
+/*mudanÃ§as solha*/
 .doencas_top {
     width: 100%;
     overflow: hidden;
@@ -228,7 +223,7 @@ a{
     background-size: cover;
     background-position: center;
     height: 35vh;
-    font-family: 'Nunito', sans-serif; 
+    font-family: 'Nunito', sans-serif;
     padding: 0;
     margin: 0;
 }
@@ -281,7 +276,7 @@ a{
         padding: 0px 190px;
     }
 }
-/*animação*/
+/*animaÃ§Ã£o*/
 .hidden{
     opacity: 0;
     transition: 500ms;
@@ -291,7 +286,7 @@ a{
     opacity: 1;
     transform: translateY(0);
 }
-/*botão de Teste*/
+/*botÃ£o de Teste*/
 .box {
     width: 14vw;
     height: auto;
@@ -307,7 +302,7 @@ a{
     left: 40vw;
     font-size: 20px;
   }
-  
+
   .box:before {
     position: absolute;
     content: '';
@@ -320,7 +315,7 @@ a{
     box-sizing: border-box;
     transform: translateX(100%);
   }
-  
+
   .box:after {
     position: absolute;
     content: '';
@@ -333,25 +328,25 @@ a{
     box-sizing: border-box;
     transform: translateX(-100%);
   }
-  
+
   .box:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   }
-  
+
   .box:hover:before {
     border-color: #818181;
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .3s;
   }
-  
+
   .box:hover:after {
     border-color: #818181;
     height: 100%;
     transform: translateX(0);
     transition: .3s transform linear, .3s height linear .5s;
   }
-  
+
   button {
     color: rgb(120, 145, 253);
     text-decoration: none;
@@ -359,4 +354,8 @@ a{
     outline: none;
     border: none;
     background: transparent;
+  }
+
+  li{
+    line-height: 30px;
   }

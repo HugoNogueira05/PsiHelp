@@ -11,31 +11,18 @@
 <body>
 
     <link href="contacto.css" rel="stylesheet">
+    <link rel="stylesheet" href="/geral.css">
 
-    <a href="index.html"><img class="logo" src="psihelp logo.png"></a>
-    <div class="navBar" id="navbar">
-        <p href="#" class="testes" id="texto1">Testes</p>
-        <div class="dropdown-menu1">
-            <a href="/DASS-Y/DASS-Y.html">DASS-Y</a>
-            <br>
-            <br>
-            <a href="/Intersection_zung/intersection.html">Escala de Zung</a>
-        </div>
-    </div>
-    <div class="navBar2">
-        <p href="#" class="saude" id="texto2">Saúde Mental</p>
-        <div class="dropdown-menu2">
-            <a href="/Doencas/doencas.html">Doenças</a>
-            <br>
-            <br>
-            <a href="#">Como ajudar ?</a>
-        </div>
-    </div>
+    <a href="/index.html"><img class="logo" src="/psihelp logo.png"></a>
+
+
+    <br><br>
+    <h1 style="color:white;">
+        <center>Contacta-nos e partilha experiências!</center>
+    </h1>
+    <br>
     <div class="fcf-body">
-
         <div id="fcf-form">
-            <h3 class="fcf-h3">Contacta-nos</h3>
-
             <form id="fcf-form-id" class="fcf-form-class" method="post" action="contacto.php">
 
                 <div class="fcf-form-group">
@@ -56,13 +43,13 @@
                     <label for="Message" class="fcf-label">Mensagem</label>
                     <div class="fcf-input-group">
                         <textarea id="Message" name="Message" class="fcf-form-control" rows="10" maxlength="20000"
-                            required></textarea>
+                                  required></textarea>
                     </div>
                 </div>
 
                 <div class="fcf-form-group">
                     <button type="submit" id="fcf-button"
-                        class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Enviar</button>
+                            class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Enviar</button>
                 </div>
 
             </form>
@@ -70,23 +57,26 @@
 
     </div>
     <div id="footer">
-        <img src="psihelp logo.png" class="logoFooter">
-        <div id="footerTexto">
-            <div id="colInforma">
-                <p id="titulo">Informa-te</p>
-                <a href="/Doencas/doencas.html" id="contacto">Doenças</a>
-                <a href="#">Como ajudar ?</a>
-            </div>
-            <div id="colTestes">
-                <p id="titulo">Recursos</p>
-                <a href="/Intersection_zung/intersection.html" id="contacto">Testes</a>
-            </div>
-            <div id="colContactos">
-                <a href="/Contacto/contacto.html" id="titulo" class="contacto">Contactos</a>
-                <p>psihelpp@psihelp.pt</p>
-            </div>
+        <img src="/psihelp logo.png" class="logoFooter">
+        <div id="colInforma">
+          <span id="titulo" class="tituloFooter">Informa-te</span>
+          <a href="/index.html" id="contacto">Home</a>
+          <a href="/Doencas/doencas.html" id="contacto">Doenças</a>
+          <a href="/comoajudar/comoajudar.html">Como ajudar ?</a>
         </div>
-    </div>
+        <div id="colInforma">
+          <span id="titulo" class="tituloFooter">Recursos</span>
+          <a href="/Intersection_zung/intersection.html" id="contacto">Realiza um Teste</a>
+          <a href="/backoffice/listagem.php" id="contacto">Encontrar um profissional</a>
+          <a href="/backoffice/formulario.php" id="contacto">Registar-se como profissional</a>
+        </div>
+        <div id="colInforma">
+          <span id="titulo" class="tituloFooter">Contactos</span>
+          <a href="/Contacto/contacto.html">Formulário de Contacto</a>
+          <a href="mailto:equipa@psihelp.pt?subject=[Info] - Contacto site PsiHelp.pt">Email: equipa@psihelp.pt</a>
+          <a href="/testemunhos/testemunhos.html">Testemunhos</a>
+        </div>
+      </div>
     <label for="burger" class="burger">
         <input id="burger" type="checkbox">
         <span></span>
@@ -96,7 +86,7 @@
     <div class="navMobile">
         <a href="/Intersection_zung/intersection.html" class="mobTestes">Testes</a>
         <a href="/Doencas/doencas.html" class="mobSaude">Doenças</a>
-        <a href="#" class="mobSaude">Como ajudar ?</a>
+        <a href="/comoajudar/comoajudar.html" class="mobSaude">Como ajudar ?</a>
     </div>
 
 </body>
